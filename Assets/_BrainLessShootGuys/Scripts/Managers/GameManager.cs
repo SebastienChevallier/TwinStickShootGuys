@@ -7,28 +7,20 @@ using System;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoSingleton<GameManager>
-{    
-    public PlayerInputManager _PlayerInputManager;
-    public List<PlayerInfo> _PlayerList;
+{
+    public PlayerInfo _Player;
     public int _NumberOfKills;
     public int _MaxNumberOfKill;
     public int _ActualRound;
 
-    [Header("MeshMat")]
-    public List<Material> MeshMat;
-    public List<Material> playerMaterial;
-    public List<Material> playerArrowMaterial;
-
     [Header("Player spawn Points")]
     [SerializeField]private List<Transform> spawnsTransform;
-    [HideInInspector]public List<Transform> FreeSpawnsTransform;
-
-    [Header("UI Panels")]
-    public GameObject _WaitingPanel;
+    [HideInInspector]public List<Transform> FreeSpawnsTransform;    
 
     [Serializable]
     public struct PlayerInfo
     {
+        public PlayerMovement player;
         public PlayerInput playerInput;
         public int playerScore;
 
@@ -42,8 +34,10 @@ public class GameManager : MonoSingleton<GameManager>
     {
         /*_ManagerInfo = ScriptableObject.CreateInstance<ManagerInfo>();
         _ManagerInfo.Init(); */
-        
+
         FreeSpawnsTransform = spawnsTransform;
+
+        StartGame();
     }
 
     public void SpawnPlayer(PlayerInput playerInput)
@@ -59,7 +53,12 @@ public class GameManager : MonoSingleton<GameManager>
         playerInput.transform.position = position.position;
     }
 
-    public void AddPlayer(PlayerInput player)
+    public void SpawnEnnemy()
+    {
+
+    }
+
+    /*public void AddPlayer(PlayerInput player)
     {
         PlayerInfo playerTemp = new PlayerInfo();
         playerTemp.playerInput = player;
@@ -82,21 +81,18 @@ public class GameManager : MonoSingleton<GameManager>
             _WaitingPanel.SetActive(false);
             StartGame();
         }
-    }
+    }*/
 
     public void StartGame()
     {
-        foreach(PlayerInfo player in _PlayerList )
-        {
-            if(player.playerInput.TryGetComponent<PlayerMovement>(out  var playerMovement))
+            if (_Player.player)
             {
-                SpawnPlayer(player.playerInput);
-                playerMovement._CanMove = true;
-                playerMovement.InstantiateBasicPistol();
-                playerMovement.isEquipWeapon = false;
+                SpawnPlayer(_Player.playerInput);
+                _Player.player._CanMove = true;
+                _Player.player.InstantiateBasicPistol();
+                _Player.player.isEquipWeapon = false;
             }
         }
-    }
 
     public void EndGame()
     {
@@ -108,12 +104,9 @@ public class GameManager : MonoSingleton<GameManager>
 
     public void AddPoint(PlayerInput player)
     {
-        foreach (PlayerInfo plr in _PlayerList)
+        if (_Player.playerInput == player)
         {
-            if (plr.playerInput == player)
-            {
-                plr.Add(1);
-            }
+            _Player.Add(1);
         }
     }
 }
