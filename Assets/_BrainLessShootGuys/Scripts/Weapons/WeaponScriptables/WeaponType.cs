@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class WeaponType : ScriptableObject
 {
+    public bool isCac;
+
     [Header("Bullet")]
     public Bullet bulletType;
     [Range(0f, 1f)]
