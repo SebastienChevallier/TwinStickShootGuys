@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ab3160e0127f7504aa34e2980bd66253
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 189999
+  packageName: Skulls In Sombreros 2
+  packageVersion: 1.0
+  assetPath: Assets/SkullsInSombreros2/Assets/Controller/SiB2.controller
+  uploadId: 420910

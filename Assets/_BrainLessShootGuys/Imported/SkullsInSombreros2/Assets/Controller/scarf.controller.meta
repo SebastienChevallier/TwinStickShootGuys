@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 776fcd7b281f03c4ca632a9657198387
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 189999
+  packageName: Skulls In Sombreros 2
+  packageVersion: 1.0
+  assetPath: Assets/SkullsInSombreros2/Assets/Controller/scarf.controller
+  uploadId: 420910

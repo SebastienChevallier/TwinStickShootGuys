@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e85dbed961133f047b17fb0970f27d3f
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278436
+  packageName: 3d lantern
+  packageVersion: 1.0
+  assetPath: Assets/DimensionalAssetDesign/Lantern/Info/Info_Lantern.txt
+  uploadId: 647726

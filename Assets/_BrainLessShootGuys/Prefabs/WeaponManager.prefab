@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3040192104263182586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7599563705051604560}
+  - component: {fileID: 4820031599967394733}
+  m_Layer: 0
+  m_Name: WeaponManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7599563705051604560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040192104263182586}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4820031599967394733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040192104263182586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b1dfcd812f9e7340b630a9ef64b03d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponVisuals:
+  - {fileID: 6661013557042610580, guid: d2af4606402335a4cbb416bb6003079b, type: 3}
+  - {fileID: 4689163964160616856, guid: 22d4a330f3c61284198947be1ce84531, type: 3}
+  - {fileID: 8255200859003830355, guid: a7c974aaec1d027408b6241b868e61b1, type: 3}
+  - {fileID: 8046651858713868623, guid: dabf4cce15c9d6e408759b51a6491c8d, type: 3}
+  - {fileID: 1029175795553988498, guid: 911cac406be423b44a71abbaef832247, type: 3}
+  - {fileID: 8514814985437469452, guid: 5380fd3fc7a80f2429e01d9d084ac38b, type: 3}
+  - {fileID: 7804423593185420253, guid: cd5476bb62e97e54788463ef21b7c43e, type: 3}
+  - {fileID: 8285687637726101904, guid: 0af3ad94a76c5834d8b0787e1228dc68, type: 3}
+  - {fileID: 5857722632057369021, guid: 0aadfde8621561d47b23c65fb7792b6e, type: 3}
+  - {fileID: 5998016050948381135, guid: eb2202ac6949bbd44aef58635b4a8566, type: 3}
+  - {fileID: 6323514015117972039, guid: 7d1354e12445702468da45efa9cfee07, type: 3}
+  - {fileID: 1155999415614140581, guid: 862e1c09c7df8a8418a67ebac33d8177, type: 3}
+  - {fileID: 5162850603934183111, guid: 4ca3ecf17a09a7a4fb40c4383d36e83f, type: 3}
+  - {fileID: 488359232827645028, guid: 8a42c010dc7792c488229d5619c0bcab, type: 3}
+  - {fileID: 5336196718380228520, guid: 85a4ab7caf9bdd04fa135d302354bd05, type: 3}
+  - {fileID: 5600212207702685999, guid: 0701c6141ac5abd4e8bbd94014c0feed, type: 3}
+  - {fileID: 4001131238299333433, guid: 5d241348dc1557048b18bf3929bf32c5, type: 3}
+  weaponTypes:
+  - {fileID: 11400000, guid: 0e6388223087f894ab47efb22424afb1, type: 2}
+  - {fileID: 11400000, guid: 62590c8266c2eb9438c6deb0ab66dcf0, type: 2}
+  - {fileID: 11400000, guid: ac4cf98b1cef56141881ddcc2a8c0463, type: 2}
+  - {fileID: 11400000, guid: 971749acd8e05134b8a58c7371bee8cf, type: 2}
+  - {fileID: 11400000, guid: c658e703b9576de4ca4803962a3ac182, type: 2}
+  - {fileID: 11400000, guid: f571d54d245c3494fa7b1c3dab0937bc, type: 2}
+  actifSpells: []
+  chanceSpecialBullets: 0.25
+  specialBullets:
+  - {fileID: 115313366868903968, guid: 7385c01c5aafe9f48b7b7e5d8debd305, type: 3}
+  weaponInMap: []
+  weaponSpawners: []
+  numberOfWeapon: 8
+  WeaponTrunk: {fileID: 1793693205309866453, guid: a2491a9cc6868b749a75c813873f7ad9, type: 3}

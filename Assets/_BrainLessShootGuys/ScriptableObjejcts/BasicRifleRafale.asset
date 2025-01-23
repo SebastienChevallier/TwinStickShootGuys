@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596e433af097a0e4da9deb301c256c4e, type: 3}
+  m_Name: BasicRifleRafale
+  m_EditorClassIdentifier: 
+  bulletType: {fileID: 6689642571070957250, guid: 69910213d543efc4bb52e8e134a7caf2, type: 3}
+  chanceSpecialBullets: 0.5
+  specialBullets:
+  - {fileID: 115313366868903968, guid: 7385c01c5aafe9f48b7b7e5d8debd305, type: 3}
+  - {fileID: 6689642571070957250, guid: a1978c514036c5740bd3884e5f9c654d, type: 3}
+  - {fileID: 3007164534792332143, guid: f729d06b718cd204fbf21e012bc6c199, type: 3}
+  - {fileID: 5366569418357880171, guid: cc151bb6e5c355342ac395c9ab20e2d4, type: 3}
+  damage: 4
+  tireRateMinMax: {x: 0.001, y: 0.05}
+  consumJaugeMinMax: {x: 1, y: 5}
+  originWeapon: {fileID: 0}
+  tireRate: 0
+  consumJauge: 0
+  jauge: 10000
+  bulletSpeedMinMax: {x: 15, y: 30}
+  bulletSpeed: 0
+  isRafale: 1
+  bulletInRafale: 4
+  timeToReloadRafaleMinMax: {x: 0.3, y: 0.6}
+  bulletScale: 0.2
