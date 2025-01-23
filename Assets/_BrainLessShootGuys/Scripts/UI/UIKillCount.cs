@@ -15,6 +15,6 @@ public class UIKillCount : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        scoreText.text = gameManager._PlayerList[playerNumber.number - 1].playerScore.ToString() + " kills";
+        scoreText.text = gameManager._Player.playerScore.ToString() + " kills";
     }
 }
