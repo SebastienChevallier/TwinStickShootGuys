@@ -1,4 +1,4 @@
-using Cinemachine.Utility;
+/*using Cinemachine.Utility;*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour, IHealth
         isEquipWeapon = false;
         canBeHurt = true;
 
-        _weaponGaugeHandler.UpdateUISlider(0, true);
+        //_weaponGaugeHandler.UpdateUISlider(0, true);
 
         //ONLY TEST ! NEED TO BE REMOVE
 /*        _weapon.weaponType = Instantiate(_weapon.weaponType);
@@ -157,7 +157,10 @@ public class PlayerMovement : MonoBehaviour, IHealth
         if (_weapon && context.started)
         {
             _weapon.Shoot();
-            _animator.SetTrigger("Shoot");
+            if(_weapon.weaponType.isCac)
+                _animator.SetTrigger("AttackCac");
+            else    
+                _animator.SetTrigger("Shoot");
         }
         else if (_weapon && context.canceled) {
             _weapon.StopShooting();

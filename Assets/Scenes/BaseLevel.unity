@@ -24122,12 +24122,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4820031599967394733, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
       propertyPath: weaponTypes.Array.size
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4820031599967394733, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
       propertyPath: 'weaponTypes.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: f571d54d245c3494fa7b1c3dab0937bc, type: 2}
+      objectReference: {fileID: 11400000, guid: ddb0228994259c74091dce7e570bdb11, type: 2}
     - target: {fileID: 4820031599967394733, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
       propertyPath: 'weaponTypes.Array.data[1]'
       value: 
@@ -24148,6 +24148,14 @@ PrefabInstance:
       propertyPath: 'weaponTypes.Array.data[5]'
       value: 
       objectReference: {fileID: 11400000, guid: ac4cf98b1cef56141881ddcc2a8c0463, type: 2}
+    - target: {fileID: 4820031599967394733, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
+      propertyPath: weaponVisualsCac.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820031599967394733, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
+      propertyPath: 'weaponVisualsCac.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3199176659314369242, guid: 5676bdababfc9c144824b1050aa60674, type: 3}
     - target: {fileID: 7599563705051604560, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -28473,26 +28481,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0293c7c138ed5a4ca470921d6fb6690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _PlayerInputManager: {fileID: 1821452526}
-  _PlayerList: []
+  _Player:
+    player: {fileID: 0}
+    playerInput: {fileID: 0}
+    playerScore: 0
   _NumberOfKills: 0
   _MaxNumberOfKill: 10
   _ActualRound: 0
-  MeshMat:
-  - {fileID: 2100000, guid: a3984b5a2401c724a9ba56992dd9e80a, type: 2}
-  - {fileID: 2100000, guid: 5bd77eecf511450419589752300eca7c, type: 2}
-  - {fileID: 2100000, guid: 9e98310e32793b64e9c0f28c553b05cc, type: 2}
-  - {fileID: 2100000, guid: 9c8e4e2368d56c9429d5397b0e69f48c, type: 2}
-  playerMaterial:
-  - {fileID: 2100000, guid: cef9a071e6c60ae4489854287e3ea9ef, type: 2}
-  - {fileID: 2100000, guid: 88b0a1143cb64b341becda46f2ed4aac, type: 2}
-  - {fileID: 2100000, guid: 3f67eef1ebc4dd346a07b944f206c451, type: 2}
-  - {fileID: 2100000, guid: b2ed094debe4df9458a46fa71d98153a, type: 2}
-  playerArrowMaterial:
-  - {fileID: 2100000, guid: 45d80c559d175cc438ae8ea35c871a50, type: 2}
-  - {fileID: 2100000, guid: 6008b82079e04c04fa0824011b24211a, type: 2}
-  - {fileID: 2100000, guid: 3ebff3ad550a12847beac09fc8e9acb4, type: 2}
-  - {fileID: 2100000, guid: eb4abacd07bf069429d125f9faa14d04, type: 2}
   spawnsTransform:
   - {fileID: 358527822}
   - {fileID: 1162805747}
@@ -28507,7 +28502,6 @@ MonoBehaviour:
   - {fileID: 675526325}
   - {fileID: 588780509}
   FreeSpawnsTransform: []
-  _WaitingPanel: {fileID: 18390588}
 --- !u!4 &1821452525
 Transform:
   m_ObjectHideFlags: 0

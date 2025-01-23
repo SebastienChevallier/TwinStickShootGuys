@@ -24121,17 +24121,21 @@ PrefabInstance:
       value: WeaponManager
       objectReference: {fileID: 0}
     - target: {fileID: 4820031599967394733, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
+      propertyPath: numberOfWeapon
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820031599967394733, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
       propertyPath: weaponTypes.Array.size
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4820031599967394733, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
       propertyPath: 'weaponTypes.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: f571d54d245c3494fa7b1c3dab0937bc, type: 2}
+      objectReference: {fileID: 11400000, guid: ddb0228994259c74091dce7e570bdb11, type: 2}
     - target: {fileID: 4820031599967394733, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
       propertyPath: 'weaponTypes.Array.data[1]'
       value: 
-      objectReference: {fileID: 11400000, guid: 0e6388223087f894ab47efb22424afb1, type: 2}
+      objectReference: {fileID: 11400000, guid: 62590c8266c2eb9438c6deb0ab66dcf0, type: 2}
     - target: {fileID: 4820031599967394733, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
       propertyPath: 'weaponTypes.Array.data[2]'
       value: 
@@ -24148,6 +24152,14 @@ PrefabInstance:
       propertyPath: 'weaponTypes.Array.data[5]'
       value: 
       objectReference: {fileID: 11400000, guid: ac4cf98b1cef56141881ddcc2a8c0463, type: 2}
+    - target: {fileID: 4820031599967394733, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
+      propertyPath: weaponVisualsCac.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820031599967394733, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
+      propertyPath: 'weaponVisualsCac.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3199176659314369242, guid: 5676bdababfc9c144824b1050aa60674, type: 3}
     - target: {fileID: 7599563705051604560, guid: 2dbba821ae9d91f47a417662100ca78d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

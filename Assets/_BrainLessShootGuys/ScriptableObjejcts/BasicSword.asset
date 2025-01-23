@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14dcc22840f9556438e5626967f6a1e4, type: 3}
+  m_Name: BasicSword
+  m_EditorClassIdentifier: 
+  isCac: 1
+  bulletType: {fileID: 6689642571070957250, guid: 69910213d543efc4bb52e8e134a7caf2, type: 3}
+  chanceSpecialBullets: 0
+  specialBullets: []
+  damage: 30
+  tireRateMinMax: {x: 0.5, y: 1}
+  consumJaugeMinMax: {x: 7, y: 10}
+  originWeapon: {fileID: 0}
+  tireRate: 0
+  consumJauge: 8
+  jauge: 100
