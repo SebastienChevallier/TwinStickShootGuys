@@ -60,12 +60,7 @@ public class PlayerMovement : MonoBehaviour, IHealth
         isEquipWeapon = false;
         canBeHurt = true;
 
-        _weaponGaugeHandler.UpdateUISlider(0, true);
-
-        //ONLY TEST ! NEED TO BE REMOVE
-/*        _weapon.weaponType = Instantiate(_weapon.weaponType);
-        _weapon.weaponType.DefineStats();
-        _weapon.Init();*/
+        _weaponGaugeHandler.UpdateUISlider(0, true);       
     }
 
     public void Init(Material clothesMaterial) 
@@ -182,9 +177,7 @@ public class PlayerMovement : MonoBehaviour, IHealth
         else
         {
             /*if (PlayerOrigin != null)
-            {
-                PlayerInput player = PlayerOrigin.GetComponent<PlayerInput>();
-                GameManager.Instance.AddPoint(player);
+            {               
             }*/
 
             GameManager.Instance.SpawnPlayer(GetComponent<PlayerInput>());
