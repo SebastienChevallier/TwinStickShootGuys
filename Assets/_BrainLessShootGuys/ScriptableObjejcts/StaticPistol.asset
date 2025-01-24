@@ -23,5 +23,5 @@ MonoBehaviour:
   consumJauge: 0
   jauge: 100
   bulletSpeedMinMax: {x: 17.5, y: 17.5}
-  bulletScaleMinMax: {x: 0.1, y: 0.1}
+  bulletScaleMinMax: {x: 1, y: 1}
   bulletSpeed: 17.5
