@@ -23,3 +23,10 @@ MonoBehaviour:
   tireRate: 0
   consumJauge: 8
   jauge: 100
+  attackDelay: 0.5
+  attackLayerTarget:
+    serializedVersion: 2
+    m_Bits: 512
+  cacAttackDistance: 10
+  cacAttackArcRadius: 180
+  swordProjectileSize: 0

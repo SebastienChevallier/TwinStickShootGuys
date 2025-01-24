@@ -235,6 +235,13 @@ public class PlayerMovement : MonoBehaviour, IHealth
             isEquipWeapon = true;
             playerBasicPistol.gameObject.SetActive(false);
             _weaponGaugeHandler.UpdateUISlider(100);
+            if (_weapon.weaponVisual.isWorldParticle)
+            {
+                _weapon.weaponVisual.shootParticles.transform.parent = _bulletSpawnTransform;
+                _weapon.weaponVisual.shootParticles.transform.localPosition = Vector3.zero;
+                _weapon.weaponVisual.shootParticles.transform.localRotation = Quaternion.Euler(0,0,0);
+                _weapon.weaponVisual.shootParticles.transform.localScale = Vector3.one;
+            }
         }
     }
 

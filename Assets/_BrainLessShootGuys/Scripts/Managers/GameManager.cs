@@ -1,7 +1,6 @@
 using UnityEngine;
 using BaseTemplate.Behaviours;
 using UnityEngine.InputSystem;
-using NUnit.Framework;
 using System.Collections.Generic;
 using System;
 using UnityEngine.SceneManagement;
