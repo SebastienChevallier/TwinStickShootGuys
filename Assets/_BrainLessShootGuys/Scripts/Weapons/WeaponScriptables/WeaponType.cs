@@ -43,7 +43,8 @@ public class WeaponType : ScriptableObject
 
         if (jauge <= 0)
         {
-            originWeapon.playerUse.UnEquip();
+            jauge = 100;
+            //originWeapon.playerUse.UnEquip();
         }
     }
     public virtual void StopShooting()

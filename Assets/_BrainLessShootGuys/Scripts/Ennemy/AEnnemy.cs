@@ -1,6 +1,8 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
+using static UnityEngine.UI.Image;
 
 abstract public class AEnnemy : MonoBehaviour, IHealth
 {
@@ -13,10 +15,12 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
 
     protected GameObject _player;
     protected NavMeshAgent agent;
+    protected Rigidbody rb;
 
     public virtual void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        rb = GetComponent<Rigidbody>();
         SetupEnnemy();
     }
 
@@ -29,6 +33,17 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
     public abstract void Attaque();
     public abstract void Chase();
 
+    IEnumerator PushBack(float power, GameObject origin)
+    {
+        agent.enabled = false;
+        Vector3 dir = transform.position - origin.transform.position;
+        rb.AddRelativeForce(dir * 0.1f, ForceMode.Impulse);
+
+
+        yield return new WaitForSeconds(power * 0.05f);
+        agent.enabled = true;        
+    }
+
     public void Dammage(float dmg, GameObject PlayerOrigin)
     {
         PlayerInput player = PlayerOrigin.GetComponent<PlayerInput>();
@@ -40,6 +55,7 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
             {
                 actualLife -= dmg;
                 Debug.Log("Hit");
+                StartCoroutine(PushBack(dmg, PlayerOrigin));
             }
             else
             {                

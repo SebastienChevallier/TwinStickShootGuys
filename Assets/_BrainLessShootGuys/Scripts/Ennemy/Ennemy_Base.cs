@@ -8,18 +8,24 @@ public class Ennemy_Base : AEnnemy
     {
         if(attaqueCD >= fireRate)
         {
-            IHealth p = _player.GetComponent<IHealth>();
+            PlayerMovement p = _player.GetComponent<PlayerMovement>();
             p.Dammage(dammage, null);
             attaqueCD = 0;
-            Debug.Log("Attaque");
+
+            Vector3 direction = transform.forward.normalized;
+            p.PushEffect(direction, 10f);
+                       
         }
         
     }
 
     public override void Chase()
     {
-        agent.SetDestination(_player.transform.position);
-        Debug.Log("Chase");
+        if(agent.enabled)
+        {
+            agent.SetDestination(_player.transform.position);            
+        }
+        
     }
 
     public override void Update()

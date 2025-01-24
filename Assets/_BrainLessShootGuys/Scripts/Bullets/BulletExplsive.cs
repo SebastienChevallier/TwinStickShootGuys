@@ -9,8 +9,7 @@ public class BulletExplosive : Bullet
 
         //Vector3 direction = (player.transform.position - transform.position).normalized;
 
-        Vector3 direction = transform.forward.normalized;
-        Debug.Log(direction);
+        Vector3 direction = transform.forward.normalized;        
         player.PushEffect(direction, explosionForce);
         player.Dammage(weaponType.damage, origin);
 
