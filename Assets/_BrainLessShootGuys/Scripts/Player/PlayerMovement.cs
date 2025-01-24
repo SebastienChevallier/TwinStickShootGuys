@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour, IHealth
     private Vector3 aimDirection;
     private PlayerInput playerInput;
     private Vector2 mousePos;
+    private float cdDashValue;
+    private Quaternion rotationValueLerp;
 
     [Header("Player Info")]
     public PlayerStats _stats;
@@ -73,22 +75,25 @@ public class PlayerMovement : MonoBehaviour, IHealth
     }
 
     private void Update()
-    {
-/*        if (Input.GetKeyDown(KeyCode.E))
-            _weapon.Shoot();
-        if (Input.GetKeyDown(KeyCode.F))
-            _weapon.StopShooting();*/
-
-        if(Input.GetKey(KeyCode.Space)) { Dammage(10, null); }
+    {       
         if (!_CanMove) return;
         UpdateAnimatorParameters();
+
+        _visualTranform.rotation = Quaternion.Lerp(_visualTranform.rotation, rotationValueLerp, _stats.GetStat(Stat.RotationSpeed) * Time.deltaTime);
+
+        if (cdDashValue <= _stats.GetStat(Stat.DashCD))
+        {
+            cdDashValue += Time.deltaTime;
+        }
     }
 
     private void FixedUpdate()
-    {
+    {        
         if (!_CanMove) return;
         //rb.AddForce(moveDirection * _stats._Speed * Time.deltaTime, ForceMode.VelocityChange);
-        rb.linearVelocity = moveDirection * _stats._Speed * Time.deltaTime;
+        rb.linearVelocity = moveDirection * _stats.GetStat(Stat.Speed) * Time.deltaTime;
+
+        Debug.Log(rb.linearVelocity);
     }
 
     public void GetMoveDirection(InputAction.CallbackContext context)
@@ -125,7 +130,8 @@ public class PlayerMovement : MonoBehaviour, IHealth
             _cameraOrigin.localPosition = aimDirection * 0.5f;
         }
 
-        _visualTranform.rotation = Quaternion.LookRotation(aimDirection);        
+        //_visualTranform.rotation = Quaternion.LookRotation(aimDirection);
+        rotationValueLerp = Quaternion.LookRotation(aimDirection);        
     }
 
     private void UpdateAnimatorParameters()
@@ -161,6 +167,12 @@ public class PlayerMovement : MonoBehaviour, IHealth
     public void GetSkillAction(InputAction.CallbackContext context)
     {
         if (!_CanMove) return;
+
+        if (context.started && cdDashValue >= _stats.GetStat(Stat.DashCD))
+        {
+            rb.AddForce(moveDirection * _stats.GetStat(Stat.DashForce), ForceMode.Impulse);
+            cdDashValue = 0;
+        }
     }
 
     public void Dammage(float dmg, GameObject PlayerOrigin)
@@ -253,6 +265,14 @@ public class PlayerMovement : MonoBehaviour, IHealth
         playerBasicPistol.weaponType = weaponType;
         Equip(playerBasicPistol, true);
         _weapon.Init();
+    }
+
+    public void AddStat(PairStat stat)
+    {
+        if (stat != null) 
+        {
+            _stats.AddStat(stat);
+        }
     }
 
     #endregion

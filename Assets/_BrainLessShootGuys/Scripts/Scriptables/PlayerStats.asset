@@ -14,5 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _CurrentHealth: 100
   _MaxHealth: 100
-  _Speed: 375
-  _BaseSpeed: 375
+  _Stats:
+  - _Stat: 0
+    _Value: 100
+  - _Stat: 0
+    _Value: 100
+  - _Stat: 1
+    _Value: 100
+  - _Stat: 2
+    _Value: 100
+  - _Stat: 3
+    _Value: 0.5
+  - _Stat: 7
+    _Value: 15
