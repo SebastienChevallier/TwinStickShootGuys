@@ -8,6 +8,8 @@ public class Weapon : MonoBehaviour
     public WeaponType weaponType;
     public Transform weaponVisualParent;
     public PlayerMovement playerUse;
+
+    public bool canAttack;
     public virtual void Init()
     {
         //actifSpell.Init(this);
@@ -15,8 +17,11 @@ public class Weapon : MonoBehaviour
     }
 
     public void Shoot() {
-        weaponType.OnShoot();
-        weaponVisual.OnShoot();
+        if (canAttack)
+        {
+            weaponType.OnShoot();
+            weaponVisual.OnShoot();
+        }
     }
 
     public void StopShooting()

@@ -147,7 +147,8 @@ public class PlayerMovement : MonoBehaviour, IHealth
 
     public void GetShootAction(InputAction.CallbackContext context) 
     {
-        if (!_CanMove) return;
+        if (!_CanMove || (_weapon && !_weapon.canAttack)) return;
+
 
         if (_weapon && context.started)
         {
