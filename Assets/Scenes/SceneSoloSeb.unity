@@ -1951,7 +1951,7 @@ GameObject:
   - component: {fileID: 165049807}
   - component: {fileID: 165049805}
   - component: {fileID: 165049804}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tools
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12382,7 +12382,7 @@ GameObject:
   - component: {fileID: 518054935}
   - component: {fileID: 518054937}
   - component: {fileID: 518054936}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15862,7 +15862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 819374914}
   - component: {fileID: 819374915}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tools
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26906,7 +26906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1661655676}
   - component: {fileID: 1661655677}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Options
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28483,7 +28483,7 @@ GameObject:
   - component: {fileID: 1788273029}
   - component: {fileID: 1788273031}
   - component: {fileID: 1788273030}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
