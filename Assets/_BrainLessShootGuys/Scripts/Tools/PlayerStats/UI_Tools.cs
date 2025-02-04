@@ -30,10 +30,12 @@ public class UI_Tools : MonoBehaviour
         if(panelOpen)
         {
             panel.SetActive(false);
+            panelOpen = false;
         }
         else
         {
             panel.SetActive(true);
+            panelOpen = true;
         }
     }
 }
