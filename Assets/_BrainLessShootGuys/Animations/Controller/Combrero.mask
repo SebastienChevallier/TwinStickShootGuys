@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Combrero
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: InSombreroBones
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/pelvis_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/pelvis_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/breast_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/breast_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/Neck
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/Neck/Head
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/Neck/Head/ScarfAndBandanaAnimated
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/Neck/Head/ScarfAndBandanaAnimated/Bandana
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/Neck/Head/ScarfAndBandanaAnimated/Scarf
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/Neck/Head/ScarfAndBandanaAnimated/ScarfandBandanaBones
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/Neck/Head/ScarfAndBandanaAnimated/ScarfandBandanaBones/MainBone
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/Neck/Head/ScarfAndBandanaAnimated/ScarfandBandanaBones/MainBone/Eyebrow_C
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/Neck/Head/ScarfAndBandanaAnimated/ScarfandBandanaBones/MainBone/Eyebrow_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/Neck/Head/ScarfAndBandanaAnimated/ScarfandBandanaBones/MainBone/Eyebrow_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/Neck/Head/ScarfAndBandanaAnimated/ScarfandBandanaBones/MainBone/Jaw
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/f_index_01_L/f_index_02_L/f_index_03_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/thumb_01_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/thumb_01_L/thumb_02_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/thumb_01_L/thumb_02_L/thumb_03_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_01_L/thumb_01_L/thumb_02_L/thumb_03_L/thumb_03_L_001
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_02_L/f_middle_01_L/f_middle_02_L/f_middle_03_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_03_L/f_ring_01_L/f_ring_02_L/f_ring_03_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_L/upper_arm_L/forearm_L/hand_L/palm_04_L/f_pinky_01_L/f_pinky_02_L/f_pinky_03_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/f_index_01_R/f_index_02_R/f_index_03_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/thumb_01_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/thumb_01_R/thumb_02_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/thumb_01_R/thumb_02_R/thumb_03_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/thumb_01_R/thumb_02_R/thumb_03_R/thumb_03_R_001
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/WeaponAnchor
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_01_R/WeaponAnchor/blasterA
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_02_R/f_middle_01_R/f_middle_02_R/f_middle_03_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_03_R/f_ring_01_R/f_ring_02_R/f_ring_03_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/spine_001/spine_002/spine_003/shoulder_R/upper_arm_R/forearm_R/hand_R/palm_04_R/f_pinky_01_R/f_pinky_02_R/f_pinky_03_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/thigh_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/thigh_L/shin_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/thigh_L/shin_L/foot_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/thigh_L/shin_L/foot_L/toe_L
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/thigh_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/thigh_R/shin_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/thigh_R/shin_R/foot_R
+    m_Weight: 1
+  - m_Path: InSombreroBones/spine/thigh_R/shin_R/foot_R/toe_R
+    m_Weight: 1
+  - m_Path: Skin
+    m_Weight: 1
+  - m_Path: Skin/Belt
+    m_Weight: 1
+  - m_Path: Skin/Boots
+    m_Weight: 1
+  - m_Path: Skin/Holster
+    m_Weight: 1
+  - m_Path: Skin/Jacket
+    m_Weight: 1
+  - m_Path: Skin/Scarf_1
+    m_Weight: 1
+  - m_Path: Skin/SkullIy
+    m_Weight: 1
+  - m_Path: Skin/SkullIy__1_
+    m_Weight: 1
+  - m_Path: Skin/Trousers
+    m_Weight: 1

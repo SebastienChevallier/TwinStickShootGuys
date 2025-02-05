@@ -13,7 +13,7 @@ public class Ennemy_Base : AEnnemy
             attaqueCD = 0;
 
             Vector3 direction = transform.forward.normalized;
-            p.PushEffect(direction, 10f);                       
+            p.PushEffect(direction, 5f);                       
         }        
     }
 
