@@ -9,11 +9,8 @@ EditorBuildSettings:
     path: Assets/_BrainLessShootGuys/Scenes/MainMenuScene.unity
     guid: accf44d07e5b981408d299eb1c41cb8d
   - enabled: 1
-    path: Assets/Scenes/BaseLevel.unity
-    guid: d30868c303670e94fb6e525eda0ed526
-  - enabled: 1
-    path: Assets/_BrainLessShootGuys/Scenes/BaseLevelV0.5.unity
-    guid: 235e2fbc3cc7eb74fa24378c5b1841b5
+    path: Assets/Scenes/SceneSoloSeb.unity
+    guid: 7a5608d89a87acf488c3f908267022d4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

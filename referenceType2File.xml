@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTypeDate xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TypeDate>
+    <guid>e0bac01732d517f4dbb24a3f10ea5dfb</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetCollector.cs</fileName>
+    <timeStamp>2024-06-01T15:39:43+02:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.AssetCollector</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>39742196d5f20ed43a43d025b2d80d2c</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/AssetReferenceCollection.cs</fileName>
+    <timeStamp>2024-06-01T15:39:43+02:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.AssetReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>81b2ef9f18356224bb9b24714d269415</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ClassReferenceCollection.cs</fileName>
+    <timeStamp>2024-06-01T15:39:43+02:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.ClassReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>54c385c2041600a4792c1580b8d36b0d</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/CollectionData.cs</fileName>
+    <timeStamp>2024-06-01T15:39:43+02:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.CollectionData</string>
+      <string>UnitySweeper.TypeDate</string>
+      <string>UnitySweeper.IReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b3799f71d60c9184f8d5702b96c2c224</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/FindUnusedAssetsWindow.cs</fileName>
+    <timeStamp>2024-06-01T15:39:43+02:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.FindUnusedAssetsWindow</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2cfcbd20e56d7d44abe90ec4107474b9</guid>
+    <fileName>Assets/Plugins/UnitySweeper/Editor/ShaderReferenceCollection.cs</fileName>
+    <timeStamp>2024-06-01T15:39:43+02:00</timeStamp>
+    <typeFullName>
+      <string>UnitySweeper.ShaderReferenceCollection</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>fcf7219bab7fe46a1ad266029b2fee19</guid>
+    <fileName>Assets/TutorialInfo/Scripts/Readme.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>Readme</string>
+      <string>Readme+Section</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2d3133fdca4abe04f817f3f4182dce31</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/SceneLoader.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>SceneLoader</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>af2072d7b90d9f14fa66cf645093a490</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/WeaponSpawner.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>WeaponSpawner</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>476cc7d7cd9874016adc216baab94a0a</guid>
+    <fileName>Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>ReadmeEditor</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>667a920440364b4488796b5e2c4552de</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Bullets/BounceBullet.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>BounceBullet</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c4a68fcf51d1ec240ba9c6aca1ce0352</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Bullets/Bullet.cs</fileName>
+    <timeStamp>2025-01-24T12:07:10.3273532+01:00</timeStamp>
+    <typeFullName>
+      <string>Bullet</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>05276c5a78df83e458db293a396fd01d</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Bullets/BulletExplsive.cs</fileName>
+    <timeStamp>2025-01-24T12:07:10.3283554+01:00</timeStamp>
+    <typeFullName>
+      <string>BulletExplosive</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c1c8b39b20ad3dc42b9d9b9aa088af81</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Ennemy/AEnnemy.cs</fileName>
+    <timeStamp>2025-01-24T12:07:10.329409+01:00</timeStamp>
+    <typeFullName>
+      <string>AEnnemy</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c6d4379c4e63e9645847bf8b591e1d5d</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Ennemy/Ennemy_Base.cs</fileName>
+    <timeStamp>2025-01-24T12:07:10.329409+01:00</timeStamp>
+    <typeFullName>
+      <string>Ennemy_Base</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>e647e2af1c574b642aeaa30a586d8d43</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Interfaces/IHealth.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>IHealth</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4c62dfb629924f34695183ca76df93ea</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/MainMenu/GameModManager.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>GameModManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c007ba6cd9eb0334393f63d0fa906c72</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/MainMenu/MainMenuManager.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>MainMenuManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>1cf0a9eae0c1845499dd4fd049898d39</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/MainMenu/NumberOfPlayerSetter.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>NumberOfPlayerSetter</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8b1dfcd812f9e7340b630a9ef64b03d3</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Manager/LevelManager.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>LevelManager</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d7855ed2fc016464c86dd828e0712a5e</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Manager/MonoSingleton.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>BaseTemplate.Behaviours.MonoSingleton`1</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b0293c7c138ed5a4ca470921d6fb6690</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Managers/GameManager.cs</fileName>
+    <timeStamp>2025-01-24T12:07:10.3394703+01:00</timeStamp>
+    <typeFullName>
+      <string>GameManager</string>
+      <string>GameManager+PlayerInfo</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d913b45847bc8c0468e9e105b90f15bf</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Player/PlayerMovement.cs</fileName>
+    <timeStamp>2025-01-24T16:50:11.4139348+01:00</timeStamp>
+    <typeFullName>
+      <string>PlayerMovement</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>bd09f9fe33d5e9647a63bd6336dad323</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Player/PlayerNumber.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>PlayerNumber</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>ab6427f30a8953442b7bfc501a2c970f</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Scriptables/ManagerInfo.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>ManagerInfo</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3dd915232f3a70e4f8001a9c0df98588</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Scriptables/PlayerStats.cs</fileName>
+    <timeStamp>2025-01-24T16:50:11.4149367+01:00</timeStamp>
+    <typeFullName>
+      <string>PlayerStats</string>
+      <string>Stat</string>
+      <string>PairStat</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7986d300f55520649ae8ae462dc93301</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/UI/CameraShake.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>CameraShake</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>5e4a842620bab63409af6aeb706a58ad</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/UI/UIGaugeHandler.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>UIGaugeHandler</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>529b6008416e261498009b2479e81b25</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/UI/UIKillCount.cs</fileName>
+    <timeStamp>2025-01-24T12:07:10.3465388+01:00</timeStamp>
+    <typeFullName>
+      <string>UIKillCount</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>2bb5616b0ef9ca5468e17df9c0c82e53</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/UI/UIMoveRect.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>UIMoveRect</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>3938b39f225f4e344b41857aa98eaaa8</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/UI/UIShake.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>UIShake</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a2e2cebf556da7448bc757ba04f81f99</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/UI/UIWeaponGetter.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>UIWeaponGetter</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>8789307fd27f6454da2e3e82c4a46f27</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Weapons/Weapon.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>Weapon</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>7e3bdbfae450cbc43889b34bc623e9e2</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Weapons/WeaponVisual.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>WeaponVisual</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>d1373ee99f0604f4380a0e49522d7b5d</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Tools/PlayerStats/UI_Stat.cs</fileName>
+    <timeStamp>2025-01-24T16:50:11.4161136+01:00</timeStamp>
+    <typeFullName>
+      <string>UI_Stat</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>c20dd499ebc65dc479ff35eb3d457c95</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Tools/PlayerStats/UI_Tools.cs</fileName>
+    <timeStamp>2025-02-04T16:46:04.2621013+01:00</timeStamp>
+    <typeFullName>
+      <string>UI_Tools</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>579781f6eb7976046a37c5f2b97b87a0</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Weapons/ActifSpells/ActifSpell.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>ActifSpell</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>56429f0f3315f6a4ca6d2e0c2773afe3</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Weapons/WeaponScriptables/BasicPistol.cs</fileName>
+    <timeStamp>2025-01-24T12:07:10.3475386+01:00</timeStamp>
+    <typeFullName>
+      <string>BasicPistol</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>596e433af097a0e4da9deb301c256c4e</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Weapons/WeaponScriptables/BasicRifle.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>BasicRifle</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b980bf8d1aa51644dbf982586bb22700</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Weapons/WeaponScriptables/ChargingLaser.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>ChargingLaser</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>a604eadab271c0948bf33573555dfdb6</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Weapons/WeaponScriptables/Pistol.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>Pistol</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>b29ab451a501ff145b0028db811def9c</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Weapons/WeaponScriptables/Rifle.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>Rifle</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f6426cad5f84aaf4fb256fe1bb31bb93</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Weapons/WeaponScriptables/Shotgun.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>Shotgun</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>6ea300b9d8a147b4aa72bc9131adb315</guid>
+    <fileName>Assets/_BrainLessShootGuys/Scripts/Weapons/WeaponScriptables/WeaponType.cs</fileName>
+    <timeStamp>2025-01-24T12:07:10.3475386+01:00</timeStamp>
+    <typeFullName>
+      <string>WeaponType</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>4bb6081b4a37bbe4dbe02dfbf915c25f</guid>
+    <fileName>Assets/_BrainLessShootGuys/Imported/BrokenVector/LowPolyFencePack/Scripts/DoorController.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>BrokenVector.LowPolyFencePack.DoorController</string>
+      <string>BrokenVector.LowPolyFencePack.DoorController+DoorState</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+  <TypeDate>
+    <guid>f6a88a59113dd8940a03ac435b0f5a5e</guid>
+    <fileName>Assets/_BrainLessShootGuys/Imported/BrokenVector/LowPolyFencePack/Scripts/DoorToggle.cs</fileName>
+    <timeStamp>2025-01-23T12:11:38+01:00</timeStamp>
+    <typeFullName>
+      <string>BrokenVector.LowPolyFencePack.DoorToggle</string>
+    </typeFullName>
+    <assembly>Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+  </TypeDate>
+</ArrayOfTypeDate>
