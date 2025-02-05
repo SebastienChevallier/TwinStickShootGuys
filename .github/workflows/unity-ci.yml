@@ -33,9 +33,9 @@ jobs:
             targetPlatform: StandaloneWindows64  # Windows, WebGL, Android, etc.        
             
         - name: Set up Unity
-          uses: game-ci/unity-actions/setup-unity@v2
+          uses: game-ci/setup-unity@v2
           with:
-            unityVersion: 2021.3.16f1  # Change avec ta version Unity
+            unityVersion: 6000.0.34f1  # Change avec ta version Unity
       
         - name: Run Unit Tests
           uses: game-ci/unity-test-runner@v2
