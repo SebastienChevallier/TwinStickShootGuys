@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Ennemy_Base : AEnnemy
 {
-    public float attaqueCD = 0;
+    private float attaqueCD = 0;
 
     public override void Attaque()
     {
@@ -13,10 +13,8 @@ public class Ennemy_Base : AEnnemy
             attaqueCD = 0;
 
             Vector3 direction = transform.forward.normalized;
-            p.PushEffect(direction, 10f);
-                       
-        }
-        
+            p.PushEffect(direction, 10f);                       
+        }        
     }
 
     public override void Chase()
@@ -24,8 +22,7 @@ public class Ennemy_Base : AEnnemy
         if(agent.enabled)
         {
             agent.SetDestination(_player.transform.position);            
-        }
-        
+        }        
     }
 
     public override void Update()

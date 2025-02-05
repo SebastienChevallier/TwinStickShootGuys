@@ -37,7 +37,7 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
     {
         agent.enabled = false;
         Vector3 dir = transform.position - origin.transform.position;
-        rb.AddRelativeForce(dir * 0.1f, ForceMode.Impulse);
+        rb.AddRelativeForce(dir * 0.05f, ForceMode.Impulse);
 
 
         yield return new WaitForSeconds(power * 0.05f);
@@ -72,10 +72,12 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
         {            
             if (Vector3.Distance(transform.position, _player.transform.position) <= range)
             {
+                agent.isStopped = true;
                 Attaque();
             }
             else
             {
+                agent.isStopped = false;
                 Chase();
             }
         }

@@ -158,7 +158,7 @@ public class PlayerMovement : MonoBehaviour, IHealth
         if (_weapon && context.started)
         {
             _weapon.Shoot();
-            _animator.SetTrigger("Shoot");
+            //_animator.SetTrigger("Shoot");
         }
         else if (_weapon && context.canceled) {
             _weapon.StopShooting();

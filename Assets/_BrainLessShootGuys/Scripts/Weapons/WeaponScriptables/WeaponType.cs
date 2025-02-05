@@ -54,6 +54,7 @@ public class WeaponType : ScriptableObject
 
     public virtual void InstantiateBullet()
     {
+        originWeapon.playerUse._animator.SetTrigger("Shoot");
         ConsumJauge();
     }
 
