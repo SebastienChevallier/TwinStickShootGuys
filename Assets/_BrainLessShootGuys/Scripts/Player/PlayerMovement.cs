@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour, IHealth
         //rb.AddForce(moveDirection * _stats._Speed * Time.deltaTime, ForceMode.VelocityChange);
         rb.linearVelocity = moveDirection * _stats.GetStat(Stat.Speed) * Time.deltaTime;
 
-        Debug.Log(rb.linearVelocity);
+        //Debug.Log(rb.linearVelocity);
     }
 
     public void GetMoveDirection(InputAction.CallbackContext context)
