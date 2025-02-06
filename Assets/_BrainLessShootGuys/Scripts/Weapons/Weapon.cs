@@ -7,7 +7,7 @@ public class Weapon : MonoBehaviour
     public ActifSpell actifSpell;
     public WeaponType weaponType;
     public Transform weaponVisualParent;
-    public PlayerMovement playerUse;
+    public AEntity entityUse;
     public virtual void Init()
     {
         //actifSpell.Init(this);

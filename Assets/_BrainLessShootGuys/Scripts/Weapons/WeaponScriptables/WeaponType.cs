@@ -21,12 +21,19 @@ public class WeaponType : ScriptableObject
 
     public float jauge;
 
+    public bool isPlayer;
+    public PlayerMovement player;
     public virtual void Init(Weapon weapon)
     {
         originWeapon = weapon;
         //A changer par le player
         bulletType.origin = weapon.gameObject;
         jauge = 100;
+
+        if (isPlayer)
+        {
+            player = originWeapon.GetComponent<PlayerMovement>();
+        }
 
     }
     public virtual void OnShoot()
@@ -38,8 +45,10 @@ public class WeaponType : ScriptableObject
     {
         jauge -= consumJauge;
 
-        if (consumJauge > 0) originWeapon.playerUse._weaponGaugeHandler.UpdateUISlider(jauge);
-        else originWeapon.playerUse._weaponGaugeHandler.UpdateUISlider(0);  
+        if (isPlayer) {
+            if (consumJauge > 0) { player._weaponGaugeHandler.UpdateUISlider(jauge); }
+            else { player._weaponGaugeHandler.UpdateUISlider(0); }
+        }
 
         if (jauge <= 0)
         {
@@ -54,7 +63,7 @@ public class WeaponType : ScriptableObject
 
     public virtual void InstantiateBullet()
     {
-        originWeapon.playerUse._animator.SetTrigger("Shoot");
+        if (player) { player._animator.SetTrigger("Shoot"); }
         //SoundManager.Instance.PlayAudio(AudioSound.Shoot, originWeapon.playerUse.transform.position);
         ConsumJauge();
     }

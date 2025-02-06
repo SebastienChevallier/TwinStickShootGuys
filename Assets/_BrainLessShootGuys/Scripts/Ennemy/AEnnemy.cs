@@ -2,9 +2,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
-using static UnityEngine.UI.Image;
 
-abstract public class AEnnemy : MonoBehaviour, IHealth
+abstract public class AEnnemy : AEntity, IHealth
 {
     public float actualLife;
     public float maxLife;
@@ -16,9 +15,11 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
     protected GameObject _player;
     protected NavMeshAgent agent;
     protected Rigidbody rb;
+    public PlayerInput player;
 
     public virtual void Start()
     {
+        actualLife = maxLife;
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
         SetupEnnemy();
@@ -28,6 +29,7 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
     {
         agent.speed = speed;
         actualLife = maxLife;
+        agent.enabled = true;
     }
 
     public abstract void Attaque();
@@ -46,15 +48,13 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
 
     public void Damage(float dmg, GameObject PlayerOrigin)
     {
-        PlayerInput player = PlayerOrigin.GetComponent<PlayerInput>();
-        _player = player.gameObject;
 
         if (player != null)
         {
             if (dmg < actualLife)
             {
                 actualLife -= dmg;
-                Debug.Log("Hit");
+                //Debug.Log("Hit");
                 StartCoroutine(PushBack(dmg, PlayerOrigin));
             }
             else
@@ -72,14 +72,13 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
         {            
             if (Vector3.Distance(transform.position, _player.transform.position) <= range)
             {
-                agent.isStopped = true;
                 agent.ResetPath();
                 Attaque();
             }
             else
             {
-                agent.isStopped = false;
                 Chase();
+                agent.SetDestination(_player.transform.position);
             }
         }
     }

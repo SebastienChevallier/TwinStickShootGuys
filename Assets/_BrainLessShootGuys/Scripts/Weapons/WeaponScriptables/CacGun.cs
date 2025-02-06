@@ -14,7 +14,7 @@ public class CacGun : Rifle
     public override void InstantiateBullet()
     {
         base.InstantiateBullet();
-        originWeapon.playerUse.StartCoroutine(DelayBetweenBullet());
+        originWeapon.entityUse.StartCoroutine(DelayBetweenBullet());
     }
 
     IEnumerator DelayBetweenBullet()
@@ -24,15 +24,15 @@ public class CacGun : Rifle
 
             Bullet bullet = Instantiate(
                 bulletType,
-                originWeapon.playerUse._bulletSpawnTransform.position,
-                originWeapon.playerUse._bulletSpawnTransform.rotation
+                originWeapon.entityUse._bulletSpawnTransform.position,
+                originWeapon.entityUse._bulletSpawnTransform.rotation
                 );
 
             bullet.weaponType = this;
-            bullet.origin = originWeapon.playerUse.gameObject;
-            bullet.transform.position = originWeapon.playerUse._bulletSpawnTransform.position;
+            bullet.origin = originWeapon.entityUse.gameObject;
+            bullet.transform.position = originWeapon.entityUse._bulletSpawnTransform.position;
             float randomRot = Random.Range(-spray, spray);
-            bullet.transform.rotation = originWeapon.playerUse._bulletSpawnTransform.rotation;
+            bullet.transform.rotation = originWeapon.entityUse._bulletSpawnTransform.rotation;
             bullet.transform.localRotation *= Quaternion.Euler(0, randomRot, 0);
             bullet.transform.localScale = Vector3.one * .2f;
             bullet.rb.linearVelocity = bullet.transform.forward * bulletSpeed;

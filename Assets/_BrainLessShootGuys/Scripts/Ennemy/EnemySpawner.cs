@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class EnemySpawner : MonoBehaviour
             Vector2 randomPos = GetRandomPointOnCircle(enemySpawnDistanceToPlayer);
 
             newEnemy.transform.position = new Vector3(playerMovement.transform.position.x + randomPos.x, .3f, playerMovement.transform.position.z + randomPos.y);
+            newEnemy.player = playerMovement.gameObject.GetComponent<PlayerInput>();
         }
     }
 
