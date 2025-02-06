@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3246046da080fd4db99e6cafe60bfb6, type: 3}
+  m_Name: BasicCacGun
+  m_EditorClassIdentifier: 
+  bulletType: {fileID: 6689642571070957250, guid: 69910213d543efc4bb52e8e134a7caf2, type: 3}
+  chanceSpecialBullets: 0
+  specialBullets: []
+  damage: 1
+  tireRateMinMax: {x: 0.01, y: 0.01}
+  consumJaugeMinMax: {x: 0.1, y: 0.5}
+  originWeapon: {fileID: 0}
+  tireRate: 0
+  consumJauge: 0
+  jauge: 0
+  bulletSpeedMinMax: {x: 20, y: 25}
+  bulletSpeed: 0
+  isRafale: 0
+  bulletInRafale: 0
+  timeToReloadRafaleMinMax: {x: 0, y: 0}
+  sprayMinMax: {x: 20, y: 50}
+  bulletNumberMinMax: {x: 2, y: 4}
+  bulletDispawnTimeMinMax: {x: 0.1, y: 0.2}

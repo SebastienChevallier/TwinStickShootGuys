@@ -11,7 +11,7 @@ public class BulletExplosive : Bullet
 
         Vector3 direction = transform.forward.normalized;        
         player.PushEffect(direction, explosionForce);
-        player.Dammage(weaponType.damage, origin);
+        player.Damage(weaponType.damage, origin);
 
         //gameObject.SetActive(false);
     }

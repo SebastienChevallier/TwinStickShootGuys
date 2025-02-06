@@ -175,7 +175,7 @@ public class PlayerMovement : MonoBehaviour, IHealth
         }
     }
 
-    public void Dammage(float dmg, GameObject PlayerOrigin)
+    public void Damage(float dmg, GameObject PlayerOrigin)
     {
         //if (!canBeHurt) return;
 

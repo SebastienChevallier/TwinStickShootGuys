@@ -44,7 +44,7 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
         agent.enabled = true;        
     }
 
-    public void Dammage(float dmg, GameObject PlayerOrigin)
+    public void Damage(float dmg, GameObject PlayerOrigin)
     {
         PlayerInput player = PlayerOrigin.GetComponent<PlayerInput>();
         _player = player.gameObject;

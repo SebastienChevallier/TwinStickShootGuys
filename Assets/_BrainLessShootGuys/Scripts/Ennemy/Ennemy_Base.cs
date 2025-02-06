@@ -9,7 +9,7 @@ public class Ennemy_Base : AEnnemy
         if(attaqueCD >= fireRate)
         {
             PlayerMovement p = _player.GetComponent<PlayerMovement>();
-            p.Dammage(dammage, null);
+            p.Damage(dammage, null);
             attaqueCD = 0;
 
             Vector3 direction = transform.forward.normalized;
