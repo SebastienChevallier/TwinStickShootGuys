@@ -55,6 +55,7 @@ public class WeaponType : ScriptableObject
     public virtual void InstantiateBullet()
     {
         originWeapon.playerUse._animator.SetTrigger("Shoot");
+        SoundManager.Instance.PlayAudio(AudioSound.Shoot, originWeapon.playerUse.transform.position);
         ConsumJauge();
     }
 

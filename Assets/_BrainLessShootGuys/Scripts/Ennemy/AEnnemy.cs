@@ -73,6 +73,7 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
             if (Vector3.Distance(transform.position, _player.transform.position) <= range)
             {
                 agent.isStopped = true;
+                agent.ResetPath();
                 Attaque();
             }
             else

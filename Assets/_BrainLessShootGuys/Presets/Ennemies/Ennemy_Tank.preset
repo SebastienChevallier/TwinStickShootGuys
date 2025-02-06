@@ -30,7 +30,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: maxLife
-    value: 1000
+    value: 100
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: speed
@@ -46,7 +46,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: dammage
-    value: 12
+    value: 5
     objectReference: {fileID: 0}
   m_ExcludedProperties: []
   m_CoupledType:

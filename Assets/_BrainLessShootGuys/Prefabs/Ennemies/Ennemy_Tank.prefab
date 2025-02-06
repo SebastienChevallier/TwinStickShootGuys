@@ -106,7 +106,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!114 &7133672476657864615
 MonoBehaviour:
@@ -121,11 +121,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actualLife: 0
-  maxLife: 1000
+  maxLife: 100
   speed: 4
   fireRate: 3
   range: 1.1
-  dammage: 12
+  dammage: 5
 --- !u!1 &7284888248807430476
 GameObject:
   m_ObjectHideFlags: 0
