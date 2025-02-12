@@ -2,9 +2,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
-using static UnityEngine.UI.Image;
 
-abstract public class AEnnemy : MonoBehaviour, IHealth
+abstract public class AEnnemy : AEntity, IHealth
 {
     public float actualLife;
     public float maxLife;
@@ -16,9 +15,11 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
     protected GameObject _player;
     protected NavMeshAgent agent;
     protected Rigidbody rb;
+    public PlayerInput player;
 
     public virtual void Start()
     {
+        actualLife = maxLife;
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
         SetupEnnemy();
@@ -28,10 +29,17 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
     {
         agent.speed = speed;
         actualLife = maxLife;
+        agent.enabled = true;
     }
 
     public abstract void Attaque();
     public abstract void Chase();
+
+    public override void PushEffect(Vector3 direction, float force)
+    {
+        base.PushEffect(direction,force);
+        //StartCoroutine(PushBack(dmg, PlayerOrigin));
+    }
 
     IEnumerator PushBack(float power, GameObject origin)
     {
@@ -44,18 +52,16 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
         agent.enabled = true;        
     }
 
-    public void Dammage(float dmg, GameObject PlayerOrigin)
+    public override void Damage(float dmg, GameObject PlayerOrigin)
     {
-        PlayerInput player = PlayerOrigin.GetComponent<PlayerInput>();
-        _player = player.gameObject;
 
         if (player != null)
         {
             if (dmg < actualLife)
             {
                 actualLife -= dmg;
-                Debug.Log("Hit");
-                StartCoroutine(PushBack(dmg, PlayerOrigin));
+                //Debug.Log("Hit");
+                //StartCoroutine(PushBack(dmg, PlayerOrigin));
             }
             else
             {                
@@ -68,18 +74,20 @@ abstract public class AEnnemy : MonoBehaviour, IHealth
 
     public virtual void Update()
     {        
-        if (_player != null)
-        {            
+        if (PlayerManager.Instance.players.Count > 0)
+        {
+            _player = PlayerManager.Instance.players[0].gameObject;
+
             if (Vector3.Distance(transform.position, _player.transform.position) <= range)
             {
-                agent.isStopped = true;
                 agent.ResetPath();
                 Attaque();
+                print("trop proooche");
             }
             else
             {
-                agent.isStopped = false;
                 Chase();
+                agent.SetDestination(_player.transform.position);
             }
         }
     }

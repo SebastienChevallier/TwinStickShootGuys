@@ -2,11 +2,12 @@ using System.Collections;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "BasicShotgun", menuName = "Scriptable Objects/WeaponType/Shotgun/basicShotgun", order = 1)]
-public class Shotgun : Pistol
+[CreateAssetMenu(fileName = "CacGun", menuName = "Scriptable Objects/WeaponType/CacGun/basicCacGun", order = 1)]
+public class CacGun : Rifle
 {
     public Vector2 sprayMinMax;
     public Vector2 bulletNumberMinMax;
+    public Vector2 bulletDispawnTimeMinMax;
 
     int bulletNumber;
     float spray;
@@ -33,8 +34,12 @@ public class Shotgun : Pistol
             float randomRot = Random.Range(-spray, spray);
             bullet.transform.rotation = originWeapon.entityUse._bulletSpawnTransform.rotation;
             bullet.transform.localRotation *= Quaternion.Euler(0, randomRot, 0);
-            bullet.transform.localScale = Vector3.one * bulletScale;
+            bullet.transform.localScale = Vector3.one * .2f;
             bullet.rb.linearVelocity = bullet.transform.forward * bulletSpeed;
+            if (bulletDispawnTimeMinMax.y > 0)
+            {
+                Destroy(bullet.gameObject, Random.Range(bulletDispawnTimeMinMax.x, bulletDispawnTimeMinMax.y));
+            }
             yield return new WaitForEndOfFrame();
         }
     }

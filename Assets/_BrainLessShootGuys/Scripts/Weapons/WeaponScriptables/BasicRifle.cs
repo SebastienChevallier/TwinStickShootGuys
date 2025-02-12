@@ -10,15 +10,15 @@ public class BasicRifle : Rifle
         base.InstantiateBullet();
         Bullet bullet = Instantiate(
             bulletType,
-            originWeapon.playerUse._bulletSpawnTransform.position,
-            originWeapon.playerUse._bulletSpawnTransform.rotation
+            originWeapon.entityUse._bulletSpawnTransform.position,
+            originWeapon.entityUse._bulletSpawnTransform.rotation
             );
 
         bullet.weaponType = this;
-        bullet.origin = originWeapon.playerUse.gameObject;
-        bullet.transform.position = originWeapon.playerUse._bulletSpawnTransform.position;
-        bullet.transform.rotation = originWeapon.playerUse._bulletSpawnTransform.rotation;
+        bullet.origin = originWeapon.entityUse.gameObject;
+        bullet.transform.position = originWeapon.entityUse._bulletSpawnTransform.position;
+        bullet.transform.rotation = originWeapon.entityUse._bulletSpawnTransform.rotation;
         bullet.transform.localScale = Vector3.one * bulletScale;
-        bullet.rb.linearVelocity = originWeapon.playerUse._bulletSpawnTransform.forward * bulletSpeed;
+        bullet.rb.linearVelocity = originWeapon.entityUse._bulletSpawnTransform.forward * bulletSpeed;
     }
 }

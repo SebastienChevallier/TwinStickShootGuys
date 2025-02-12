@@ -39,7 +39,7 @@ public class WeaponSpawner : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Player") && tempWeaponSpawn != null)
+        if (other.gameObject.layer == LayerMask.NameToLayer("Entity") && tempWeaponSpawn != null)
         {
             if (other.TryGetComponent<PlayerMovement>(out PlayerMovement pm))
             {

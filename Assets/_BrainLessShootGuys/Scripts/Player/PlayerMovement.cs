@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
-public class PlayerMovement : MonoBehaviour, IHealth
+public class PlayerMovement : AEntity, IHealth
 {
     private Rigidbody rb;
     private Vector3 moveDirection;
@@ -23,10 +23,8 @@ public class PlayerMovement : MonoBehaviour, IHealth
     public LayerMask _layerMask;
 
     [Header("Referencies")]
-    public Transform _weaponAnchor;
     public Transform _visualTranform;
     public Transform _cameraOrigin;
-    public Transform _bulletSpawnTransform;
     public Camera _camera;
     public Animator _animator;
     public Weapon basicPistol;
@@ -40,6 +38,12 @@ public class PlayerMovement : MonoBehaviour, IHealth
 
     [Header("Particles")]
     public ParticleSystem _breakParticles;
+
+    [Header("CameraShake")]
+    public float shakeTime;
+    public float shakeAmplitudeBase;
+    public float shakeFrequencyBase;
+
 
     private CameraShake ShakeComp;
     private bool canBeHurt = true;
@@ -159,6 +163,7 @@ public class PlayerMovement : MonoBehaviour, IHealth
         {
             _weapon.Shoot();
             //_animator.SetTrigger("Shoot");
+
         }
         else if (_weapon && context.canceled) {
             _weapon.StopShooting();
@@ -175,8 +180,9 @@ public class PlayerMovement : MonoBehaviour, IHealth
         }
     }
 
-    public void Dammage(float dmg, GameObject PlayerOrigin)
+    public override void Damage(float dmg, GameObject PlayerOrigin)
     {
+        base.Damage(dmg,PlayerOrigin);
         //if (!canBeHurt) return;
 
         if (dmg < _stats._CurrentHealth)
@@ -226,7 +232,7 @@ public class PlayerMovement : MonoBehaviour, IHealth
     public void Equip(Weapon wpn, bool isBasicPistol = false)
     {
         wpn.enabled = true;
-        wpn.playerUse = this;
+        wpn.entityUse = this;
         _weapon = wpn;
         _weapon.transform.SetParent(_weaponAnchor);
         _weapon.transform.localPosition = Vector3.zero;

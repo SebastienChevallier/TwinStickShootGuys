@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3007164534792332143, guid: f729d06b718cd204fbf21e012bc6c199, type: 3}
       propertyPath: layerCanTouch.m_Bits
-      value: 648
+      value: 1672
       objectReference: {fileID: 0}
     - target: {fileID: 3109213401515189361, guid: f729d06b718cd204fbf21e012bc6c199, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

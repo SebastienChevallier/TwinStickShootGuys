@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5798685873701485798}
   - component: {fileID: 8379325688662897077}
   - component: {fileID: 7133672476657864615}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Ennemy_Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -120,12 +120,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6d4379c4e63e9645847bf8b591e1d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bulletSpawnTransform: {fileID: 0}
+  _weaponAnchor: {fileID: 0}
   actualLife: 0
-  maxLife: 100
-  speed: 4
+  maxLife: 50
+  speed: 2.5
   fireRate: 3
-  range: 1.1
+  range: 1.2
   dammage: 5
+  player: {fileID: 0}
 --- !u!1 &7284888248807430476
 GameObject:
   m_ObjectHideFlags: 0

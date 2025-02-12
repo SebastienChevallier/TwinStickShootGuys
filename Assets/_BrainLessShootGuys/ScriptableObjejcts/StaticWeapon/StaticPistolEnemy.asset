@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56429f0f3315f6a4ca6d2e0c2773afe3, type: 3}
+  m_Name: StaticPistolEnemy
+  m_EditorClassIdentifier: 
+  bulletType: {fileID: 6689642571070957250, guid: 69910213d543efc4bb52e8e134a7caf2, type: 3}
+  chanceSpecialBullets: 0
+  specialBullets: []
+  damage: 2
+  tireRateMinMax: {x: 0.175, y: 0.175}
+  consumJaugeMinMax: {x: 0, y: 0}
+  originWeapon: {fileID: 0}
+  tireRate: 0.75
+  consumJauge: 0
+  jauge: 100
+  isPlayer: 0
+  player: {fileID: 0}
+  bulletSpeedMinMax: {x: 17.5, y: 17.5}
+  bulletScaleMinMax: {x: 1, y: 1}
+  bulletSpeed: 17.5

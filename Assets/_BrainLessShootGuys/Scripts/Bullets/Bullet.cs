@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour, IBullet
     public virtual void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject != origin && (layerCanTouch.value & (1 << collision.transform.gameObject.layer)) > 0) {
-            if (collision.gameObject.layer == LayerMask.NameToLayer("Ennemy"))
+            if (collision.gameObject.layer == LayerMask.NameToLayer("Entity"))
                 OnTouch(collision);
 
             Destroy(gameObject);
@@ -26,8 +26,6 @@ public class Bullet : MonoBehaviour, IBullet
     public virtual void OnTouch(Collider collision)
     {
         IHealth player = collision.GetComponent<IHealth>();
-        player.Dammage(weaponType.damage, origin);
-
-        //gameObject.SetActive(false);
+        player.Damage(weaponType.damage, origin);
     }
 }
