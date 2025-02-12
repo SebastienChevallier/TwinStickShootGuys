@@ -14,6 +14,21 @@ public class BasicPistol : Pistol
             originWeapon.playerUse._bulletSpawnTransform.rotation
             );
 
+        IBullet decoratedBullet = WrapBullet(bullet);
+
+        if (decoratedBullet is Bullet b)
+        {
+            bullet = b;
+        }
+        else if (decoratedBullet is ADecorator decorator && decorator is ADecorator)
+        {
+            bullet = decorator.bulletInstance; // Récupère la vraie instance de Bullet
+        }
+        else
+        {
+            Debug.LogError("Wrapped bullet is not a Bullet instance!");
+        }
+
         bullet.weaponType = this;
         bullet.origin = originWeapon.playerUse.gameObject;
         bullet.transform.position = originWeapon.playerUse._bulletSpawnTransform.position;

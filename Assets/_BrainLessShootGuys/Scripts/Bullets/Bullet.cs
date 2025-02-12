@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Bullet : MonoBehaviour, IBullet
 {
     public GameObject origin;
     public LayerMask layerCanTouch;
