@@ -18,13 +18,15 @@ MonoBehaviour:
   bulletDecorator:
   - {fileID: 11400000, guid: fe81af449ca46724e8498bfd8d38bc8a, type: 2}
   - {fileID: 11400000, guid: 08bbcc6c06644ce469503dd7f9dd88d7, type: 2}
-  damage: 2
+  damage: 5
   tireRateMinMax: {x: 0.175, y: 0.175}
   consumJaugeMinMax: {x: 0, y: 0}
   originWeapon: {fileID: 0}
   tireRate: 0.175
   consumJauge: 0
   jauge: 100
+  isPlayer: 0
+  player: {fileID: 0}
   bulletSpeedMinMax: {x: 17.5, y: 17.5}
   bulletScaleMinMax: {x: 1, y: 1}
   bulletSpeed: 17.5

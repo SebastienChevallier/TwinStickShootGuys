@@ -1,8 +1,9 @@
 using UnityEngine;
 using System.Collections;
+using BaseTemplate.Behaviours;
 using System.Collections.Generic;
 
-public class CameraShake : MonoBehaviour
+public class CameraShake : MonoSingleton<CameraShake>
 {
     public Transform cameraTransform;
 

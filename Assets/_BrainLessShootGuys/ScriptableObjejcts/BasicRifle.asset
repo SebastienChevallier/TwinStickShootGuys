@@ -19,13 +19,16 @@ MonoBehaviour:
   - {fileID: 6689642571070957250, guid: a1978c514036c5740bd3884e5f9c654d, type: 3}
   - {fileID: 3007164534792332143, guid: f729d06b718cd204fbf21e012bc6c199, type: 3}
   - {fileID: 5366569418357880171, guid: cc151bb6e5c355342ac395c9ab20e2d4, type: 3}
-  damage: 4
+  bulletDecorator: []
+  damage: 6
   tireRateMinMax: {x: 0.05, y: 0.2}
   consumJaugeMinMax: {x: 1, y: 5}
   originWeapon: {fileID: 0}
   tireRate: 0
   consumJauge: 0
   jauge: 100
+  isPlayer: 0
+  player: {fileID: 0}
   bulletSpeedMinMax: {x: 15, y: 30}
   bulletSpeed: 0
   isRafale: 0
