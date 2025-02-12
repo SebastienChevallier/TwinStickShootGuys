@@ -110,7 +110,7 @@ MonoBehaviour:
   origin: {fileID: 0}
   layerCanTouch:
     serializedVersion: 2
-    m_Bits: 648
+    m_Bits: 1672
   rb: {fileID: 1125971438803460191}
   weaponType: {fileID: 0}
   destroyDelay: 5

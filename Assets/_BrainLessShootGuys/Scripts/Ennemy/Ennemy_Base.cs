@@ -8,7 +8,7 @@ public class Ennemy_Base : AEnnemy
     {
         if(attaqueCD >= fireRate)
         {
-            PlayerMovement p = _player.GetComponent<PlayerMovement>();
+            AEntity p = _player.GetComponent<AEntity>();
             p.Damage(dammage, null);
             attaqueCD = 0;
 

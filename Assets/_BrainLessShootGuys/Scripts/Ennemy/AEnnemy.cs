@@ -35,6 +35,12 @@ abstract public class AEnnemy : AEntity, IHealth
     public abstract void Attaque();
     public abstract void Chase();
 
+    public override void PushEffect(Vector3 direction, float force)
+    {
+        base.PushEffect(direction,force);
+        //StartCoroutine(PushBack(dmg, PlayerOrigin));
+    }
+
     IEnumerator PushBack(float power, GameObject origin)
     {
         agent.enabled = false;
@@ -46,7 +52,7 @@ abstract public class AEnnemy : AEntity, IHealth
         agent.enabled = true;        
     }
 
-    public void Damage(float dmg, GameObject PlayerOrigin)
+    public override void Damage(float dmg, GameObject PlayerOrigin)
     {
 
         if (player != null)
@@ -55,7 +61,7 @@ abstract public class AEnnemy : AEntity, IHealth
             {
                 actualLife -= dmg;
                 //Debug.Log("Hit");
-                StartCoroutine(PushBack(dmg, PlayerOrigin));
+                //StartCoroutine(PushBack(dmg, PlayerOrigin));
             }
             else
             {                
@@ -68,12 +74,15 @@ abstract public class AEnnemy : AEntity, IHealth
 
     public virtual void Update()
     {        
-        if (_player != null)
-        {            
+        if (PlayerManager.Instance.players.Count > 0)
+        {
+            _player = PlayerManager.Instance.players[0].gameObject;
+
             if (Vector3.Distance(transform.position, _player.transform.position) <= range)
             {
                 agent.ResetPath();
                 Attaque();
+                print("trop proooche");
             }
             else
             {

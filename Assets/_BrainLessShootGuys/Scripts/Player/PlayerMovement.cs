@@ -39,6 +39,12 @@ public class PlayerMovement : AEntity, IHealth
     [Header("Particles")]
     public ParticleSystem _breakParticles;
 
+    [Header("CameraShake")]
+    public float shakeTime;
+    public float shakeAmplitudeBase;
+    public float shakeFrequencyBase;
+
+
     private CameraShake ShakeComp;
     private bool canBeHurt = true;
 
@@ -157,6 +163,7 @@ public class PlayerMovement : AEntity, IHealth
         {
             _weapon.Shoot();
             //_animator.SetTrigger("Shoot");
+
         }
         else if (_weapon && context.canceled) {
             _weapon.StopShooting();
@@ -173,8 +180,9 @@ public class PlayerMovement : AEntity, IHealth
         }
     }
 
-    public void Damage(float dmg, GameObject PlayerOrigin)
+    public override void Damage(float dmg, GameObject PlayerOrigin)
     {
+        base.Damage(dmg,PlayerOrigin);
         //if (!canBeHurt) return;
 
         if (dmg < _stats._CurrentHealth)

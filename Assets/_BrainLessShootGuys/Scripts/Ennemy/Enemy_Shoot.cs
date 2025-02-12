@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Enemy_Shoot : AEnnemy
 {
@@ -22,14 +23,12 @@ public class Enemy_Shoot : AEnnemy
     }
     public override void Attaque()
     {
+        transform.LookAt(_player.transform);
         weaponEquip.Shoot();
     }
 
     public override void Chase()
     {
-        if (agent.enabled)
-        {
-            agent.SetDestination(_player.transform.position);
-        }
+
     }
 }
