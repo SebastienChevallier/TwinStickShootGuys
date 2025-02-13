@@ -1334,8 +1334,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2931704633069100643}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -12}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.82042503, z: -12.72112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1374,7 +1374,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1786,6 +1786,34 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5610159318762905922}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: UnEquip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5610159318762905922}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: InstantiateBasicPistol
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 42d803ef-b921-4e8e-b656-9590384ed0d8
+    m_ActionName: 'Player/Dash1[/Keyboard/shift]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -1833,6 +1861,9 @@ MonoBehaviour:
   _healthGaugeHandler: {fileID: 542400461284794761}
   _weaponGaugeHandler: {fileID: 8515739594151703728}
   _breakParticles: {fileID: 3056039768359791513}
+  shakeTime: 0
+  shakeAmplitudeBase: 0
+  shakeFrequencyBase: 0
 --- !u!114 &6164793598042605572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2559,7 +2590,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5138172862786351780}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: b09df0e62f6643e47bf61ebad090eb60, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 41a95e62dafdcb64994a235efdb32f98, type: 3}
   m_Controller: {fileID: 9100000, guid: 58fb562605cf1e0419f7bb468fa936e4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
