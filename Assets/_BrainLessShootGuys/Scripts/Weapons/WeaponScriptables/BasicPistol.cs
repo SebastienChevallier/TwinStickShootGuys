@@ -33,7 +33,7 @@ public class BasicPistol : Pistol
         bullet.origin = originWeapon.entityUse.gameObject;
         bullet.transform.position = originWeapon.entityUse._bulletSpawnTransform.position;
         bullet.transform.rotation = originWeapon.entityUse._bulletSpawnTransform.rotation;
-        bullet.transform.localScale = Vector3.one * 0.1f;
+        //bullet.transform.localScale = Vector3.one * 0.1f;
         //Debug.Log(bullet.transform.localScale);
         bullet.rb.linearVelocity = originWeapon.entityUse._bulletSpawnTransform.forward * bulletSpeed;
     }

@@ -15,12 +15,10 @@ MonoBehaviour:
   bulletType: {fileID: 6689642571070957250, guid: 69910213d543efc4bb52e8e134a7caf2, type: 3}
   chanceSpecialBullets: 0
   specialBullets: []
-  bulletDecorator:
-  - {fileID: 11400000, guid: fe81af449ca46724e8498bfd8d38bc8a, type: 2}
-  - {fileID: 11400000, guid: 08bbcc6c06644ce469503dd7f9dd88d7, type: 2}
-  damage: 5
+  damage: 4
   tireRateMinMax: {x: 0.175, y: 0.175}
   consumJaugeMinMax: {x: 0, y: 0}
+  powerFeeling: 1
   originWeapon: {fileID: 0}
   tireRate: 0.175
   consumJauge: 0
@@ -28,5 +26,5 @@ MonoBehaviour:
   isPlayer: 0
   player: {fileID: 0}
   bulletSpeedMinMax: {x: 17.5, y: 17.5}
-  bulletScaleMinMax: {x: 1, y: 1}
-  bulletSpeed: 17.5
+  bulletScaleMinMax: {x: 3, y: 3}
+  bulletSpeed: 60

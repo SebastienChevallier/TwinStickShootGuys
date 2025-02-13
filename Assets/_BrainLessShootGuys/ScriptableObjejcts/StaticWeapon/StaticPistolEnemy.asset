@@ -15,7 +15,7 @@ MonoBehaviour:
   bulletType: {fileID: 6689642571070957250, guid: 69910213d543efc4bb52e8e134a7caf2, type: 3}
   chanceSpecialBullets: 0
   specialBullets: []
-  damage: 2
+  damage: 5
   tireRateMinMax: {x: 0.175, y: 0.175}
   consumJaugeMinMax: {x: 0, y: 0}
   originWeapon: {fileID: 0}

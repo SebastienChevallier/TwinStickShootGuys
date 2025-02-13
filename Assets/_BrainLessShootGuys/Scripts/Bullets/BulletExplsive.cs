@@ -5,7 +5,7 @@ public class BulletExplosive : Bullet
     public float explosionForce = 5f;
     public override void OnTouch(Collider collision)
     {
-        PlayerMovement player = collision.GetComponent<PlayerMovement>();
+        AEntity player = collision.GetComponent<AEntity>();
 
         //Vector3 direction = (player.transform.position - transform.position).normalized;
 

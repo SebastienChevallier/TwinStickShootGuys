@@ -22,13 +22,16 @@ MonoBehaviour:
   damage: 0.75
   tireRateMinMax: {x: 0, y: 0.05}
   consumJaugeMinMax: {x: 0.2, y: 0.5}
+  powerFeeling: 3
   originWeapon: {fileID: 0}
   tireRate: 0
   consumJauge: 0
   jauge: 0
-  bulletSpeedMinMax: {x: 10, y: 30}
+  isPlayer: 0
+  player: {fileID: 0}
+  bulletSpeedMinMax: {x: 30, y: 50}
   bulletSpeed: 0
   isRafale: 0
   bulletInRafale: 0
   timeToReloadRafaleMinMax: {x: 0, y: 0}
-  bulletScale: 0.05
+  bulletScale: 0.3

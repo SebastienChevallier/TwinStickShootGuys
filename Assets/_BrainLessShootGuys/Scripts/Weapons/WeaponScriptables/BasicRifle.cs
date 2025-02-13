@@ -18,7 +18,7 @@ public class BasicRifle : Rifle
         bullet.origin = originWeapon.entityUse.gameObject;
         bullet.transform.position = originWeapon.entityUse._bulletSpawnTransform.position;
         bullet.transform.rotation = originWeapon.entityUse._bulletSpawnTransform.rotation;
-        bullet.transform.localScale = Vector3.one * bulletScale;
+        //bullet.transform.localScale = Vector3.one * bulletScale;
         bullet.rb.linearVelocity = originWeapon.entityUse._bulletSpawnTransform.forward * bulletSpeed;
     }
 }

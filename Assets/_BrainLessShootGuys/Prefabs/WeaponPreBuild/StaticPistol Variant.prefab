@@ -81,6 +81,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5908688303768224198}
     m_Modifications:
+    - target: {fileID: 582582438245499221, guid: 7d1354e12445702468da45efa9cfee07, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.672
+      objectReference: {fileID: 0}
     - target: {fileID: 2607750748972843641, guid: 7d1354e12445702468da45efa9cfee07, type: 3}
       propertyPath: m_Name
       value: blasterL
