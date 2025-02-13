@@ -33,7 +33,7 @@ public class Shotgun : Pistol
             float randomRot = Random.Range(-spray, spray);
             bullet.transform.rotation = originWeapon.entityUse._bulletSpawnTransform.rotation;
             bullet.transform.localRotation *= Quaternion.Euler(0, randomRot, 0);
-            bullet.transform.localScale = Vector3.one * bulletScale;
+            //bullet.transform.localScale = Vector3.one * bulletScale;
             bullet.rb.linearVelocity = bullet.transform.forward * bulletSpeed;
             yield return new WaitForEndOfFrame();
         }

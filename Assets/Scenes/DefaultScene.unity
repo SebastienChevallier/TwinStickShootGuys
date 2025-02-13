@@ -2212,9 +2212,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 7133672476657864615, guid: 87aefb1443fb730458e4791d3e25cc27, type: 3}
+  - {fileID: 1832753359358371227, guid: 7c6d8b41d089b6a4a9f0b8aeb57a1187, type: 3}
   eliteEnemies: []
   eliteEnemiesSpawnChance: 0
-  spawnEnemyTimeMinMax: {x: 1, y: 2}
+  spawnEnemyTimeMinMax: {x: 0.5, y: 1.5}
   spawnEnemiesTransform: {fileID: 1599832755}
   enemySpawnDistanceToPlayer: 15
   playerMovement: {fileID: 1681464356}
@@ -12042,7 +12043,7 @@ Transform:
   m_GameObject: {fileID: 489700558}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.82042503, z: -12.72112}
+  m_LocalPosition: {x: 0, y: 1.4674721, z: -15.135934}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29599,7 +29600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 12.5, z: -2.5}
+  m_FollowOffset: {x: 0, y: 15, z: -2.5}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -29661,7 +29662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
   m_PivotOffset: {x: 0, y: 0, z: 0}
-  m_AmplitudeGain: 1
+  m_AmplitudeGain: 0
   m_FrequencyGain: 1
   mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &1856158744
@@ -32693,17 +32694,33 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1542454265}
+    - target: {fileID: 5610159318762905922, guid: 8851458095d11c6468163111986df2bd, type: 3}
+      propertyPath: shakeTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610159318762905922, guid: 8851458095d11c6468163111986df2bd, type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 489700560}
+    - target: {fileID: 5610159318762905922, guid: 8851458095d11c6468163111986df2bd, type: 3}
+      propertyPath: shakeAmplitudeBase
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610159318762905922, guid: 8851458095d11c6468163111986df2bd, type: 3}
+      propertyPath: shakeFrequencyBase
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5970717224408040070, guid: 8851458095d11c6468163111986df2bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5970717224408040070, guid: 8851458095d11c6468163111986df2bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.82042503
+      value: 1.4674721
       objectReference: {fileID: 0}
     - target: {fileID: 5970717224408040070, guid: 8851458095d11c6468163111986df2bd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.72112
+      value: -15.135934
       objectReference: {fileID: 0}
     - target: {fileID: 5970717224408040070, guid: 8851458095d11c6468163111986df2bd, type: 3}
       propertyPath: m_LocalRotation.w

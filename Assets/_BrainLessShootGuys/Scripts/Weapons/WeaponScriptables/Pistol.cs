@@ -7,7 +7,7 @@ public class Pistol : WeaponType
     public Vector2 bulletScaleMinMax;
     public float bulletSpeed;
     
-    protected float bulletScale;
+   // protected float bulletScale;
 
     protected bool canShoot = true;
     public override void Init(Weapon weapon)
@@ -41,6 +41,6 @@ public class Pistol : WeaponType
     {
         base.DefineStats();
         bulletSpeed = Random.Range(bulletSpeedMinMax.x, bulletSpeedMinMax.y);
-        bulletScale = Random.Range(bulletScaleMinMax.x, bulletScaleMinMax.y);
+        //bulletScale = Random.Range(bulletScaleMinMax.x, bulletScaleMinMax.y);
     }
 }

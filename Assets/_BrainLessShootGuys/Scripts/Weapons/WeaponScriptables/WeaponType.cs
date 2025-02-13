@@ -14,6 +14,7 @@ public class WeaponType : ScriptableObject
     public float damage;
     public Vector2 tireRateMinMax;
     public Vector2 consumJaugeMinMax;
+    public float powerFeeling;
 
     public Weapon originWeapon;
     public float tireRate;
@@ -32,7 +33,7 @@ public class WeaponType : ScriptableObject
 
         if (isPlayer)
         {
-            player = originWeapon.GetComponent<PlayerMovement>();
+            player = originWeapon.GetComponentInParent<PlayerMovement>();
         }
 
     }
@@ -47,7 +48,7 @@ public class WeaponType : ScriptableObject
 
         if (isPlayer) {
             if (consumJauge > 0) { player._weaponGaugeHandler.UpdateUISlider(jauge); }
-            else { player._weaponGaugeHandler.UpdateUISlider(0); }
+            //else { player._weaponGaugeHandler.UpdateUISlider(0); }
         }
 
         if (jauge <= 0)
@@ -63,7 +64,11 @@ public class WeaponType : ScriptableObject
 
     public virtual void InstantiateBullet()
     {
-        if (player) { player._animator.SetTrigger("Shoot"); }
+        if (player) {
+            
+            player._animator.SetTrigger("Shoot");
+            player.ShootEffect(powerFeeling);
+        }
         //SoundManager.Instance.PlayAudio(AudioSound.Shoot, originWeapon.playerUse.transform.position);
         ConsumJauge();
     }

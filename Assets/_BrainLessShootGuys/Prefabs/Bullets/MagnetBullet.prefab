@@ -13,6 +13,10 @@ PrefabInstance:
       value: MagnetBullet
       objectReference: {fileID: 0}
     - target: {fileID: 3007164534792332143, guid: f729d06b718cd204fbf21e012bc6c199, type: 3}
+      propertyPath: origin
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3007164534792332143, guid: f729d06b718cd204fbf21e012bc6c199, type: 3}
       propertyPath: explosionForce
       value: -30
       objectReference: {fileID: 0}

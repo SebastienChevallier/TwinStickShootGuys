@@ -82,7 +82,7 @@ abstract public class AEnnemy : AEntity, IHealth
             {
                 agent.ResetPath();
                 Attaque();
-                print("trop proooche");
+                //print("trop proooche");
             }
             else
             {

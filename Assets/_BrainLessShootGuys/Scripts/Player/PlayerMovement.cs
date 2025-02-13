@@ -1,8 +1,11 @@
+using Cinemachine;
 using Cinemachine.Utility;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class PlayerMovement : AEntity, IHealth
@@ -31,6 +34,7 @@ public class PlayerMovement : AEntity, IHealth
     public SkinnedMeshRenderer skullRenderer;
     public List<MeshRenderer> arrowRenderers;
     public List<SkinnedMeshRenderer> OtherMeshes;
+    public CinemachineVirtualCamera virtualCamera;
     Weapon playerBasicPistol;
 
     [Header("UIRefs")]
@@ -43,7 +47,9 @@ public class PlayerMovement : AEntity, IHealth
     public float shakeTime;
     public float shakeAmplitudeBase;
     public float shakeFrequencyBase;
-
+    private CinemachineBasicMultiChannelPerlin noise;
+    private bool isShaking;
+    private float shakingTimeTemp;
 
     private CameraShake ShakeComp;
     private bool canBeHurt = true;
@@ -66,7 +72,8 @@ public class PlayerMovement : AEntity, IHealth
         isEquipWeapon = false;
         canBeHurt = true;
 
-        _weaponGaugeHandler.UpdateUISlider(0, true);       
+        _weaponGaugeHandler.UpdateUISlider(0, true);
+        noise = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
     }
 
     public void Init(Material clothesMaterial) 
@@ -89,6 +96,20 @@ public class PlayerMovement : AEntity, IHealth
         {
             cdDashValue += Time.deltaTime;
         }
+        
+
+        if (isShaking)
+        {
+            if (shakingTimeTemp <= 0)
+            {
+                noise.m_AmplitudeGain = 0;
+                noise.m_FrequencyGain = 0;
+                isShaking = false;
+            }
+
+            shakingTimeTemp -= Time.deltaTime;
+        }
+
     }
 
     private void FixedUpdate()
@@ -169,6 +190,15 @@ public class PlayerMovement : AEntity, IHealth
             _weapon.StopShooting();
         }
     }
+
+    public void ShootEffect(float powerFeeling)
+    {
+        noise.m_AmplitudeGain = shakeAmplitudeBase * powerFeeling;
+        noise.m_FrequencyGain = shakeFrequencyBase;
+
+        shakingTimeTemp = shakeTime;
+        isShaking = true;
+    }
     public void GetSkillAction(InputAction.CallbackContext context)
     {
         if (!_CanMove) return;
@@ -198,9 +228,10 @@ public class PlayerMovement : AEntity, IHealth
             {               
             }*/
 
-            GameManager.Instance.SpawnPlayer(GetComponent<PlayerInput>());
+            //GameManager.Instance.SpawnPlayer(GetComponent<PlayerInput>());
             _stats.Init();
             _healthGaugeHandler.UpdateUISlider(_stats._CurrentHealth);
+            SceneManager.LoadScene("MainMenu");
             //Fin de la manche
             //Destroy(gameObject);
         }
@@ -238,6 +269,8 @@ public class PlayerMovement : AEntity, IHealth
         _weapon.transform.localPosition = Vector3.zero;
         _weapon.transform.localRotation = Quaternion.identity;
         _weapon.transform.localScale = Vector3.one;
+        _weapon.weaponType.isPlayer = true;
+        _weapon.weaponType.player = this;
 
         if (isBasicPistol)
         {
@@ -268,6 +301,9 @@ public class PlayerMovement : AEntity, IHealth
     {        
         playerBasicPistol = Instantiate(basicPistol);
         WeaponType weaponType = Instantiate(basicPistol.weaponType);
+        weaponType.isPlayer = true;
+        weaponType.player = this;
+        weaponType.originWeapon = playerBasicPistol;
         playerBasicPistol.weaponType = weaponType;
         Equip(playerBasicPistol, true);
         _weapon.Init();
