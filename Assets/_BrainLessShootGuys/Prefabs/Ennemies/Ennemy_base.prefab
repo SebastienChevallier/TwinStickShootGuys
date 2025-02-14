@@ -206,9 +206,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6d4379c4e63e9645847bf8b591e1d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bulletSpawnTransform: {fileID: 0}
+  _weaponAnchor: {fileID: 0}
   actualLife: 0
   maxLife: 30
   speed: 5
   fireRate: 5
   range: 1
   dammage: 10
+  xdOnKill: 20
+  player: {fileID: 0}

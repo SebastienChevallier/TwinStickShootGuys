@@ -23,6 +23,7 @@ public class GameManager : MonoSingleton<GameManager>
         public PlayerMovement player;
         public PlayerInput playerInput;
         public int playerScore;
+        public PlayerProgression playerProgression;
 
         public void Add(int score)
         {
@@ -71,7 +72,7 @@ public class GameManager : MonoSingleton<GameManager>
 
             foreach (MeshRenderer meshArrow in playerMovement.arrowRenderers)
             {
-                meshArrow.material = playerArrowMaterial[_PlayerList.IndexOf(playerTemp)];
+                meshArrow.material = playerArrowMaterial[_PlayerList.IndexOf(playerTemp)];            <--- a ba gg ca orian
             }
             playerMovement.Init(MeshMat[_PlayerList.IndexOf(playerTemp)]);
         }
@@ -102,11 +103,12 @@ public class GameManager : MonoSingleton<GameManager>
         }
     }
 
-    public void AddPoint(PlayerInput player)
+    public void AddPoint(PlayerInput player, float xp)
     {
         if (_Player.playerInput == player)
         {
             _Player.Add(1);
+            _Player.playerProgression.AddLevelProgression(xp);
         }
     }
 }
