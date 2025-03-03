@@ -21,8 +21,6 @@ public class SoundManager : MonoSingleton<SoundManager>
         sound = sounds[2];
         sound.source = transform.GetChild(2).GetComponent<AudioSource>();
 
-
-
         StartCoroutine(PlayMusic(sounds[0]));
         StartCoroutine(PlayMusic(sounds[1]));
     }
