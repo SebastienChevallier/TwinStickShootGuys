@@ -1,9 +1,9 @@
 using UnityEngine;
 using BaseTemplate.Behaviours;
 using UnityEngine.UI;
-public class UISettingManager : MonoSingleton<UISettingManager>
+public class UIMenuSettings : MonoSingleton<UIMenuSettings>
 {
-    [Header("Parametters")]
+    [Header("Parameters")]
     public SoundSettings soundSettings;
     public UIResolutionSettings resolutionSettings;
 
@@ -16,6 +16,7 @@ public class UISettingManager : MonoSingleton<UISettingManager>
         LoadSettings();
     }
 
+    #region Settings
     public void SaveSettings()
     {
         PlayerPrefs.Save();
@@ -29,13 +30,6 @@ public class UISettingManager : MonoSingleton<UISettingManager>
     {
         AudioListener.volume = GetVolume("Master");
         LoadVSync();
-    }
-
-    public void LoadVSync()
-    {
-        bool isVsyncEnabled = PlayerPrefs.GetInt("VSync", 1) == 1;
-        vsyncToggle.isOn = isVsyncEnabled;
-        ApplyVsync(isVsyncEnabled);
     }
 
     public void ResetSettings()
@@ -59,6 +53,9 @@ public class UISettingManager : MonoSingleton<UISettingManager>
 
         LoadVSync();
     }
+    #endregion
+
+    #region Getter/Setter
 
     public void SetVolume(string key, float value)
     {
@@ -79,7 +76,15 @@ public class UISettingManager : MonoSingleton<UISettingManager>
     {
         return PlayerPrefs.GetInt("Resolution", 0);
     }
+    #endregion
 
+    #region VSync
+    public void LoadVSync()
+    {
+        bool isVsyncEnabled = PlayerPrefs.GetInt("VSync", 1) == 1;
+        vsyncToggle.isOn = isVsyncEnabled;
+        ApplyVsync(isVsyncEnabled);
+    }
     public void SetVsync(bool isEnabled)
     {
         PlayerPrefs.SetInt("VSync", isEnabled ? 1 : 0);
@@ -96,4 +101,5 @@ public class UISettingManager : MonoSingleton<UISettingManager>
     {
         SetVsync(isOn);
     }
+    #endregion
 }

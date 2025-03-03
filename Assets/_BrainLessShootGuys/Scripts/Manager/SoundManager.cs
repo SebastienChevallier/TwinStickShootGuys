@@ -8,10 +8,12 @@ using UnityEngine.Audio;
 
 public class SoundManager : MonoSingleton<SoundManager>
 {
-    public List<AudioStruct> sounds = new List<AudioStruct>();       
+    public List<AudioStruct> sounds = new List<AudioStruct>();
 
     private void Start()
     {
+        ApplySavedVolumes();
+
         AudioStruct sound = sounds[0];
         sound.source = transform.GetChild(0).GetComponent<AudioSource>();
 
@@ -24,6 +26,7 @@ public class SoundManager : MonoSingleton<SoundManager>
         StartCoroutine(PlayMusic(sounds[0]));
         StartCoroutine(PlayMusic(sounds[1]));
     }
+
 
     public AudioStruct GetAudioClip(AudioSound sound)
     {
@@ -55,11 +58,11 @@ public class SoundManager : MonoSingleton<SoundManager>
         audio.source.Play();        
     }
 
-    public void UpdateVolumes()
+    public void ApplySavedVolumes()
     {
-        float masterVolume = UIMenuSettings.Instance.GetVolume("Master");
-        float musicVolume = UIMenuSettings.Instance.GetVolume("Music");
-        float sfxVolume = UIMenuSettings.Instance.GetVolume("SFX");
+        float masterVolume = PlayerPrefs.GetFloat("Master", 1f);
+        float musicVolume = PlayerPrefs.GetFloat("Music", 1f);
+        float sfxVolume = PlayerPrefs.GetFloat("SFX", 1f);
 
         foreach (AudioStruct sound in sounds)
         {
@@ -71,7 +74,6 @@ public class SoundManager : MonoSingleton<SoundManager>
 
         AudioListener.volume = masterVolume;
     }
-
 
     public IEnumerator PlayMusic(AudioStruct audio)
     {   
