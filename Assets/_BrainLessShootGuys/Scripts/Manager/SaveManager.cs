@@ -1,6 +1,7 @@
+using BaseTemplate.Behaviours;
 using UnityEngine;
 
-public class SaveManager : MonoBehaviour
+public class SaveManager : MonoSingleton<SoundManager>
 {
     void Start()
     {

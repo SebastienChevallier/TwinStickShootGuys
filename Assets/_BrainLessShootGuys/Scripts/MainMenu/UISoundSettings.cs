@@ -27,15 +27,18 @@ public class SoundSettings : MonoBehaviour
     private void OnMasterVolumeChanged(float value)
     {
         UIMenuSettings.Instance.SetVolume("Master", value);
+        SoundManager.Instance.UpdateVolumes();
     }
 
     private void OnMusicVolumeChanged(float value)
     {
         UIMenuSettings.Instance.SetVolume("Music", value);
+        SoundManager.Instance.UpdateVolumes();
     }
 
     private void OnSFXVolumeChanged(float value)
     {
         UIMenuSettings.Instance.SetVolume("SFX", value);
+        SoundManager.Instance.UpdateVolumes();
     }
 }
