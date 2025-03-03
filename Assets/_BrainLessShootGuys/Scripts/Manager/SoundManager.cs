@@ -55,6 +55,24 @@ public class SoundManager : MonoSingleton<SoundManager>
         audio.source.Play();        
     }
 
+    public void UpdateVolumes()
+    {
+        float masterVolume = UIMenuSettings.Instance.GetVolume("Master");
+        float musicVolume = UIMenuSettings.Instance.GetVolume("Music");
+        float sfxVolume = UIMenuSettings.Instance.GetVolume("SFX");
+
+        foreach (AudioStruct sound in sounds)
+        {
+            if (sound.Type == AudioSound.Music)
+                sound.source.volume = musicVolume * masterVolume;
+            else
+                sound.source.volume = sfxVolume * masterVolume;
+        }
+
+        AudioListener.volume = masterVolume;
+    }
+
+
     public IEnumerator PlayMusic(AudioStruct audio)
     {   
         int indice = UnityEngine.Random.Range(0, audio.clips.Count);
