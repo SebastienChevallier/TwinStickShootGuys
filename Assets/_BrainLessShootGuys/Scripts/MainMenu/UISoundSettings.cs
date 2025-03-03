@@ -19,26 +19,23 @@ public class SoundSettings : MonoBehaviour
 
     public void LoadSettings()
     {
-        masterSlider.value = UIMenuSettings.Instance.GetVolume("Master");
-        musicSlider.value = UIMenuSettings.Instance.GetVolume("Music");
-        sfxSlider.value = UIMenuSettings.Instance.GetVolume("SFX");
+        masterSlider.value = UISettingManager.Instance.GetVolume("Master");
+        musicSlider.value = UISettingManager.Instance.GetVolume("Music");
+        sfxSlider.value = UISettingManager.Instance.GetVolume("SFX");
     }
 
     private void OnMasterVolumeChanged(float value)
     {
-        UIMenuSettings.Instance.SetVolume("Master", value);
-        SoundManager.Instance.UpdateVolumes();
+        UISettingManager.Instance.SetVolume("Master", value);
     }
 
     private void OnMusicVolumeChanged(float value)
     {
-        UIMenuSettings.Instance.SetVolume("Music", value);
-        SoundManager.Instance.UpdateVolumes();
+        UISettingManager.Instance.SetVolume("Music", value);
     }
 
     private void OnSFXVolumeChanged(float value)
     {
-        UIMenuSettings.Instance.SetVolume("SFX", value);
-        SoundManager.Instance.UpdateVolumes();
+        UISettingManager.Instance.SetVolume("SFX", value);
     }
 }
