@@ -60,9 +60,9 @@ public class SoundManager : MonoSingleton<SoundManager>
 
     public void ApplySavedVolumes()
     {
-        float masterVolume = PlayerPrefs.GetFloat("Master", 1f);
-        float musicVolume = PlayerPrefs.GetFloat("Music", 1f);
-        float sfxVolume = PlayerPrefs.GetFloat("SFX", 1f);
+        float masterVolume = SaveManager.Instance.gameSettings.masterVolume;
+        float musicVolume = SaveManager.Instance.gameSettings.musicVolume;
+        float sfxVolume = SaveManager.Instance.gameSettings.sfxVolume;
 
         foreach (AudioStruct sound in sounds)
         {
