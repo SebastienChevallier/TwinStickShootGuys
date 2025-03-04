@@ -246,6 +246,7 @@ MonoBehaviour:
   fireRate: 1
   range: 7
   dammage: 10
+  xdOnKill: 15
   player: {fileID: 0}
   weaponsCanUse:
   - {fileID: 169031135566063336, guid: de92765a547af8e46ae42eab4bd09861, type: 3}

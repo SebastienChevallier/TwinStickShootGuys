@@ -219,6 +219,7 @@ MonoBehaviour:
   fireRate: 3
   range: 1.2
   dammage: 5
+  xdOnKill: 21
   player: {fileID: 0}
 --- !u!95 &6220307441111407070
 Animator:

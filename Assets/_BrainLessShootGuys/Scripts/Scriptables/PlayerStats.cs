@@ -24,6 +24,17 @@ public class PlayerStats : ScriptableObject
         return statValue;
     }
 
+    public void ModifyStat(Stat stat, float valueAdded)
+    {
+        foreach (PairStat pair in _Stats)
+        {
+            if (pair._Stat == stat)
+            {
+                pair._Value += valueAdded;
+            }
+        }
+    }
+
     public void Init()
     {
         _MaxHealth = GetStat(Stat.Health);

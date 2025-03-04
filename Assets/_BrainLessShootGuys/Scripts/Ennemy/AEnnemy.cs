@@ -11,6 +11,7 @@ abstract public class AEnnemy : AEntity, IHealth
     public float fireRate;
     public float range;
     public float dammage;
+    public float xdOnKill;
 
     protected GameObject _player;
     protected NavMeshAgent agent;
@@ -65,7 +66,7 @@ abstract public class AEnnemy : AEntity, IHealth
             }
             else
             {                
-                GameManager.Instance.AddPoint(player);
+                GameManager.Instance.AddPoint(player, xdOnKill);
                 Destroy(gameObject);
             }
         }
