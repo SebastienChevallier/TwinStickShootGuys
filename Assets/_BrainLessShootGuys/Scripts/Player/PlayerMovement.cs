@@ -36,6 +36,7 @@ public class PlayerMovement : AEntity, IHealth
     public List<SkinnedMeshRenderer> OtherMeshes;
     public CinemachineVirtualCamera virtualCamera;
     Weapon playerBasicPistol;
+    GamblingMachine gambling;
 
     [Header("UIRefs")]
     public UIGaugeHandler _healthGaugeHandler, _weaponGaugeHandler;
@@ -237,6 +238,13 @@ public class PlayerMovement : AEntity, IHealth
         }
     }
 
+    public void AddHealth(float healthToAdd)
+    {
+        if (_stats._CurrentHealth + healthToAdd > _stats._MaxHealth) _stats._CurrentHealth = _stats._MaxHealth;
+        else _stats._CurrentHealth += healthToAdd;
+
+    }
+
     IEnumerator HitMaterial()
     {
         foreach (SkinnedMeshRenderer mesh in OtherMeshes)
@@ -257,6 +265,30 @@ public class PlayerMovement : AEntity, IHealth
     public void PushEffect(Vector3 direction, float force)
     {
         rb.AddForce(direction * force, ForceMode.Impulse);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Gambling"))
+        {
+            gambling = other.gameObject.GetComponent<GamblingMachine>();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Gambling"))
+        {
+            gambling = null;
+        }
+    }
+
+    public void Interract()
+    {
+        if(gambling != null)
+        {
+            gambling.OpenGambling();
+        }
     }
 
     #region equipements
