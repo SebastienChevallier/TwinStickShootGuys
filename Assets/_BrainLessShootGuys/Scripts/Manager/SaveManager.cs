@@ -15,9 +15,14 @@ public class SaveManager : MonoSingleton<SaveManager>
             Destroy(gameObject);
             return;
         }
-
         saveFilePath = Path.Combine(Application.persistentDataPath, "gameSave.json");
         LoadData();
+    }
+
+    private void Start()
+    {
+        transform.parent = null;
+        DontDestroyOnLoad(this);
     }
 
     public void SaveData()

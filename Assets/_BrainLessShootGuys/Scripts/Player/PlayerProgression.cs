@@ -47,7 +47,7 @@ public class PlayerProgression : MonoBehaviour
         }
         progressNeeded = initialProgressionNeeded;
         levelTxt.text = level.ToString();
-        progressBar.value = 0;
+        progressBar.value = progress;
     }
 
     public void AddLevelProgression(float additionnalProgress)
