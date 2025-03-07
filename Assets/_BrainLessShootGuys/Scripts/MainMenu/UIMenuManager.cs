@@ -15,12 +15,27 @@ public class UIMenuManager : MonoSingleton<UIMenuManager>
     public void StartNewGame()
     {
         Debug.Log("New Game");
+        SaveManager.Instance.loadSave = false;
         SceneManager.LoadScene(1);
     }
 
     public void ContinueGame()
     {
         Debug.Log("Play save");
+
+        SaveManager.Instance.loadSave = true;
+        SaveManager.Instance.LoadData();
+
+        if (SaveManager.Instance.gameSettings != null)
+        {
+            Debug.Log($"Chargement de la sauvegarde : Niveau {SaveManager.Instance.gameSettings.level}, XP {SaveManager.Instance.gameSettings.XP}, Santé {SaveManager.Instance.gameSettings.health}, Kills {SaveManager.Instance.gameSettings.kills}");
+        }
+        else
+        {
+            Debug.LogWarning("Aucune sauvegarde trouvée !");
+        }
+
+        SceneManager.LoadScene(1);
     }
 
     public void QuitGame()

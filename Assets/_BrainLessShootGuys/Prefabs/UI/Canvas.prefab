@@ -893,18 +893,6 @@ MonoBehaviour:
           m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIMenuSettings, Assembly-CSharp
-        m_MethodName: SaveSettings
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1667654159284294526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,7 +1596,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9009432248362509387}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UISoundSettings, Assembly-CSharp
         m_MethodName: OnMasterVolumeChanged
         m_Mode: 4
@@ -2227,7 +2215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1264124958050147247}
-  - component: {fileID: 9009432248362509387}
+  - component: {fileID: 841394650941823414}
   m_Layer: 5
   m_Name: SoundsSettings
   m_TagString: Untagged
@@ -2257,7 +2245,7 @@ RectTransform:
   m_AnchoredPosition: {x: 222, y: -0.9}
   m_SizeDelta: {x: 392, y: 181.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &9009432248362509387
+--- !u!114 &841394650941823414
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2266,7 +2254,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3543514271926321406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d729ee6e106602e44b21dc74d37988be, type: 3}
+  m_Script: {fileID: 11500000, guid: d6837ee4857ef7c41b818489306318b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   masterSlider: {fileID: 3043410423866770376}
@@ -2282,6 +2270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 777112850223365242}
   - component: {fileID: 1030864144504110169}
+  - component: {fileID: 639446912079297279}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -2357,6 +2346,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!114 &639446912079297279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3568141129180308040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1093d1f8e9b3cea4a9141ea52ae6ab42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vSyncToggle: {fileID: 1030864144504110169}
 --- !u!1 &4117338859306626667
 GameObject:
   m_ObjectHideFlags: 0
@@ -4046,7 +4048,7 @@ GameObject:
   - component: {fileID: 5993245036848548802}
   - component: {fileID: 2109898863268687863}
   - component: {fileID: 5834584671585107742}
-  - component: {fileID: 3084449649683769060}
+  - component: {fileID: 4554335681912577531}
   m_Layer: 5
   m_Name: Dropdown
   m_TagString: Untagged
@@ -4178,7 +4180,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_AlphaFadeSpeed: 0.15
---- !u!114 &3084449649683769060
+--- !u!114 &4554335681912577531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4187,7 +4189,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6785123721928776736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a53cf8f23460004fa018c12189f7713, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a87b0559da82c24a8f0a25ad7f6fced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   resolutionDropdown: {fileID: 5834584671585107742}
@@ -4902,7 +4904,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9009432248362509387}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UISoundSettings, Assembly-CSharp
         m_MethodName: OnSFXVolumeChanged
         m_Mode: 4
@@ -5326,7 +5328,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9009432248362509387}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UISoundSettings, Assembly-CSharp
         m_MethodName: OnMusicVolumeChanged
         m_Mode: 4
@@ -5670,19 +5672,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5127990798279353338}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UIMenuSettings, Assembly-CSharp
-        m_MethodName: ResetSettings
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &9212083278883841736
 GameObject:
   m_ObjectHideFlags: 0
