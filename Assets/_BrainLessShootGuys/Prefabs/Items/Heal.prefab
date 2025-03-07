@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthQTT: 2
   rb: {fileID: 1500263672650535793}
+  maxSpeed: 0
 --- !u!54 &1500263672650535793
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -113,7 +114,7 @@ Rigidbody:
   m_GameObject: {fileID: 2831032775923442341}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
