@@ -5,9 +5,17 @@ public class Heal : MonoBehaviour
 {
     [SerializeField] private float healthQTT;
     [SerializeField] private Rigidbody rb;
+    [SerializeField] private float maxSpeed;
 
     private void Update()
     {
+        Vector3 velocity = rb.linearVelocity;
+
+        velocity.x = Mathf.Clamp(velocity.x, -maxSpeed, maxSpeed);
+        velocity.y = Mathf.Clamp(velocity.y, -maxSpeed, maxSpeed);
+        velocity.z = Mathf.Clamp(velocity.z, -maxSpeed, maxSpeed);
+
+        rb.linearVelocity = velocity;
     }
 
     public void Throw(float strength, Quaternion rot)
