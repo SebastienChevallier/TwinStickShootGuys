@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using static Cinemachine.DocumentationSortingAttribute;
 
 public class PlayerMovement : AEntity, IHealth
 {
@@ -68,7 +69,17 @@ public class PlayerMovement : AEntity, IHealth
         rb = GetComponent<Rigidbody>();
         playerInput = GetComponent<PlayerInput>();
         ShakeComp = _camera.GetComponent<CameraShake>();
-        
+
+        if (SaveManager.Instance.loadSave && SaveManager.Instance.gameSettings != null)
+        {
+            _stats._CurrentHealth = SaveManager.Instance.gameSettings.health;
+            _healthGaugeHandler.UpdateUISlider(_stats._CurrentHealth);
+        }
+        else
+        {
+            _stats._CurrentHealth = _stats._MaxHealth;
+        }
+
         isEquipWeapon = false;
         canBeHurt = true;
 

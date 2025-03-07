@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using static GameManager;
 
 public class UIKillCount : MonoBehaviour
 {
@@ -10,6 +11,15 @@ public class UIKillCount : MonoBehaviour
     void Start()
     {
         gameManager = GameManager.Instance;
+
+        if (SaveManager.Instance.loadSave && SaveManager.Instance.gameSettings != null)
+        {
+            gameManager._Player.playerScore = SaveManager.Instance.gameSettings.kills;
+        }
+        else
+        {
+            gameManager._Player.playerScore = 0;
+        }
     }
 
     // Update is called once per frame
