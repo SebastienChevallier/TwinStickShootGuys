@@ -6,9 +6,16 @@ public class SaveManager : MonoSingleton<SaveManager>
 {
     private string saveFilePath;
     public GameSettings gameSettings;
+    public bool loadSave = false;
 
     private void Awake()
     {
+        if (Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         saveFilePath = Path.Combine(Application.persistentDataPath, "gameSave.json");
         LoadData();
     }

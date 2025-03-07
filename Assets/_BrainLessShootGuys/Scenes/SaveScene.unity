@@ -14220,57 +14220,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 646633642}
   m_CullTransparentMesh: 1
---- !u!1 &655608682
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 655608683}
-  - component: {fileID: 655608684}
-  m_Layer: 0
-  m_Name: SaveManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &655608683
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655608682}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1821452525}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &655608684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655608682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94bb66e46c2a13458a6764850417073, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameSettings:
-    masterVolume: 1
-    musicVolume: 1
-    sfxVolume: 1
-    screenWidth: 1920
-    screenHeight: 1080
-    isVSyncEnabled: 1
 --- !u!1001 &656448085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16282,7 +16231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &819374914
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29637,7 +29586,6 @@ Transform:
   - {fileID: 186890267}
   - {fileID: 53251619}
   - {fileID: 520635491}
-  - {fileID: 655608683}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1821452526
@@ -33489,9 +33437,37 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5195995558841588119, guid: 8851458095d11c6468163111986df2bd, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5195995558841588119, guid: 8851458095d11c6468163111986df2bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[17].m_ActionId
+      value: d58c7a14-9001-4859-8102-5d87c3939bb0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5195995558841588119, guid: 8851458095d11c6468163111986df2bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[17].m_ActionName
+      value: 'UI/Pause[/Keyboard/escape]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5195995558841588119, guid: 8851458095d11c6468163111986df2bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[17].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5195995558841588119, guid: 8851458095d11c6468163111986df2bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[17].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5195995558841588119, guid: 8851458095d11c6468163111986df2bd, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1542454265}
+    - target: {fileID: 5195995558841588119, guid: 8851458095d11c6468163111986df2bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[17].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1542454260}
+    - target: {fileID: 5195995558841588119, guid: 8851458095d11c6468163111986df2bd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[17].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5610159318762905922, guid: 8851458095d11c6468163111986df2bd, type: 3}
       propertyPath: shakeTime
       value: 0.1

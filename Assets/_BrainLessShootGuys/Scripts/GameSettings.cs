@@ -10,4 +10,11 @@ public class GameSettings
     public int screenWidth = 1920;
     public int screenHeight = 1080;
     public bool isVSyncEnabled = true;
+
+    #region Game
+    public float health = 100;
+    public float XP = 0;
+    public int level = 1;
+    public int kills = 0;
+    #endregion
 }

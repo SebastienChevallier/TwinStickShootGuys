@@ -41,7 +41,39 @@ public class UiMenuPanel : MonoBehaviour
 
     public void SaveQuitGame()
     {
-        Debug.Log("Save Game");
+        Debug.Log("Saving and quitting...");
+
+        PlayerMovement player = FindObjectOfType<PlayerMovement>();
+
+        if (player == null)
+        {
+            Debug.LogError("Player not found! Unable to save game.");
+            return;
+        }
+
+        PlayerProgression progression = player.GetComponent<PlayerProgression>();
+
+        if (progression == null)
+        {
+            Debug.LogError("PlayerProgression component not found on Player!");
+            return;
+        }
+
+        SaveManager.Instance.gameSettings.health = player._stats._CurrentHealth;
+        SaveManager.Instance.gameSettings.XP = progression.progress;
+        SaveManager.Instance.gameSettings.level = progression.level;
+
+        if (GameManager.Instance != null)
+        {
+            SaveManager.Instance.gameSettings.kills = GameManager.Instance._Player.playerScore;
+        }
+        else
+        {
+            Debug.LogWarning("GameManager or Player reference is null. Kills not saved.");
+        }
+
+        SaveManager.Instance.SaveData();
+
         Application.Quit();
         #if UNITY_EDITOR
                 UnityEditor.EditorApplication.isPlaying = false;

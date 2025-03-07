@@ -11,8 +11,8 @@ public class PlayerProgression : MonoBehaviour
     [Header("Progression")]
     [SerializeField] private float initialProgressionNeeded;
     [SerializeField] private float incrementalProgression;
-    private int level;
-    private float progress;
+    public int level;
+    public float progress;
     private float progressNeeded;
 
     [Header("Visuals")]
@@ -35,8 +35,17 @@ public class PlayerProgression : MonoBehaviour
 
     private void Start()
     {
+        if (SaveManager.Instance.loadSave && SaveManager.Instance.gameSettings != null)
+        {
+            level = SaveManager.Instance.gameSettings.level;
+            progress = SaveManager.Instance.gameSettings.XP;
+        }
+        else
+        {
+            level = 1;
+            progress = 0;
+        }
         progressNeeded = initialProgressionNeeded;
-        level = 1;
         levelTxt.text = level.ToString();
         progressBar.value = 0;
     }
